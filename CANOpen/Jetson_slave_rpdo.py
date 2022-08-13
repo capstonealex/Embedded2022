@@ -5,8 +5,8 @@ import time
 network = canopen.Network()
 
 # connect to the CAN network
-network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
 #network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
 # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
 slaver_node_66 = network.create_node(66, 'Jetson_exo_66.eds')
