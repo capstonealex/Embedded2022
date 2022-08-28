@@ -1,7 +1,7 @@
 ## @package INetworkClass
 # Interface for network objects
 # Ethernet and CAN 
-
+from abc import abstractmethod
 class Network():
     @abstractmethod
     def Setup(self):
