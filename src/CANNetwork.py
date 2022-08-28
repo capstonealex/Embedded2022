@@ -1,11 +1,16 @@
 import canopen
 import time
-import INetwork.py
+from abc import abstractmethod
+from interface.Network import Network
 
 class CANNetwork(Network):
-    def __init__(self):
+	## CAN network implementation 
+	# 
+    def __init__(self, nodeid, edsfileName):
         self.network = None
         self.node = None
+        self.nodeid = int(nodeid)
+        self.edsfileName = edsfileName
     
     def Setup(self):
     ## Setup the connection object
@@ -13,11 +18,11 @@ class CANNetwork(Network):
         self.network = canopen.Network()
 
         # connect to the CAN network
-        self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-        #self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+        #self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+        self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
         # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
-        self.node = network.create_node(66, 'Jetson_exo_66.eds')
+        self.node = self.network.create_node(self.nodeid , self.edsfileName )
 
         # Node send the boot-up message to the CAN network COB-ID:0x700+node-ID detail: "0"
         self.node.nmt.send_command(0)
@@ -30,7 +35,7 @@ class CANNetwork(Network):
         self.node.tpdo.read()
 
     def Update(self): 
-    ## Polling goes here 
+    ## Any polling goes here 
         try:
             timestamp_1 = self.node.rpdo[1].wait_for_reception(timeout=0.1)
             timestamp_2 = self.node.rpdo[2].wait_for_reception(timeout=0.1)
@@ -64,14 +69,18 @@ class CANNetwork(Network):
             print("RK Actual Position = {}, t={}".format(self.node.rpdo[7][0x2018].raw, timestamp_7))
             print("RK Actual Velocity = {}, t={}".format(self.node.rpdo[7][0x2019].raw, timestamp_7))
             print("RK Actual Torque   = {}, t={}".format(self.node.rpdo[8][0x201A].raw, timestamp_8))
+            return True
 
         
         except KeyboardInterrupt:
             print("Exit from reading PDO to Jetson")
+            return False
 
     def SetupHardware(self):
     ## For setting up hardware (might not be in use
         pass
+        
+    
 
 
 
