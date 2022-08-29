@@ -2,6 +2,7 @@ from sys import byteorder
 import canopen
 import cantools
 import time
+import CircularBuffer
 
 num_rpdo = 18
 
@@ -25,7 +26,7 @@ Jetson_66.nmt.start_heartbeat(1000)
 Jetson_66.rpdo.read()
 Jetson_66.tpdo.read()
 
-print("Test reading PDO to read input of Exo")
+print("CAN BUS configuration completed, waiting RPDO...")
 
 #convert hex signed 2's complement to int
 def hex2dec(hex_value, datatype): # hex_value = object of rpdo in str matrix, datatype = desired decimal data type
@@ -59,7 +60,7 @@ def dec2hex(dec_value, datatype): # hex_value = object of rpdo in str matrix, da
         hex_seg[i] = valueInByte[0+i:1+i]
     return hex_seg
 
-def print_pdo(message): # "message" type: 'canopen.pdo.base.Map'; var type: 'canopen.pdo.base.Variable'  
+def process_rpdo(message): # "message" type: 'canopen.pdo.base.Map'; var type: 'canopen.pdo.base.Variable'  
     print('%s received' % message.name)
     cob_id = str(hex(message.cob_id))
     # Add crutch sensor pdo criteria by message.cob_id
@@ -71,20 +72,34 @@ def print_pdo(message): # "message" type: 'canopen.pdo.base.Map'; var type: 'can
         splited_hex[i] = var.raw
         i = i+1
         # print('%s = %d' % (var.name, var.raw)) # var.name = str; var.raw = int(Raw representation of the object.)
-    # print(type(splited_hex[0]))
+        # print(type(splited_hex[0]))
     if cob_id[2:3] == '2': # if rpdo is 0x2-- , split msg into position and velocity
         # split list > create bytes class > convert bytes to int in little-endian
         position = int.from_bytes(bytes(splited_hex[0:4]), byteorder='little', signed=True) 
         velocity = int.from_bytes(bytes(splited_hex[4:8]), byteorder='little', signed=True)
+        position_circular.append(position)
+        velocity_circular.append(velocity)
     if cob_id[2:3] == '3': # if rpdo is 0x3--, set denominator to 1 to extract all msg as torque
-        vtorque = int.from_bytes(bytes(splited_hex), byteorder='little')
+        torque = int.from_bytes(bytes(splited_hex), byteorder='little')
+        torque_circular.append(torque)
+    
     
     print("position =", position)
-    print("velocity =", velocity)
+    print("position circular=", position_circular)
+    # print("velocity =", velocity)
     # position_dec = hex2dec(position_hex, byteorder="little")
 
+position_circular = CircularBuffer.circularlist(4)
+velocity_circular = CircularBuffer.circularlist(4)
+torque_circular = CircularBuffer.circularlist(4)
+input_data = CircularBuffer.circularlist(4)
+
 for i in range(1,num_rpdo):
-    Jetson_66.rpdo[i].add_callback(print_pdo)
+    Jetson_66.rpdo[i].add_callback(process_rpdo)
+    
+
+
 
 while(True):
+    
     time.sleep(1)
