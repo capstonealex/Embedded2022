@@ -1,0 +1,4082 @@
+CAN BUS configuration completed, waiting RPDO...
+received message name: TxPDO3_node3
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -95
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -392
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3  
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -516
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -271
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -326
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -458
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 95
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 516
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -95
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -128
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 176
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 271
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 157
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -458
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -253
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 516
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -458
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 95
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -385
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306001
+COB-ID:  0x281 , velocity = 165
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306001
+COB-ID:  0x281 , velocity = 165
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 593
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -44
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306001
+COB-ID:  0x281 , velocity = 165
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 861
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -95
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 458
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 271
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306001
+COB-ID:  0x281 , velocity = 165
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 458
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -176
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 305999
+COB-ID:  0x281 , velocity = -165
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 305999
+COB-ID:  0x281 , velocity = -165
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -981
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 458
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 176
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 271
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -516
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 305999
+COB-ID:  0x281 , velocity = -165
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -516
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -432
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 516
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306001
+COB-ID:  0x281 , velocity = 436
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node3
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = -348
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node4
+received message name: TxPDO3_node3
+received message name: TxPDO2_node3
+COB-ID:  0x283 , position = -21681
+COB-ID:  0x283 , velocity = 0
+received message name: TxPDO2_node1
+COB-ID:  0x281 , position = 306000
+COB-ID:  0x281 , velocity = 0
+received message name: TxPDO2_node2
+COB-ID:  0x282 , position = 6464
+COB-ID:  0x282 , velocity = 0
+received message name: TxPDO2_node4
+COB-ID:  0x284 , position = 6516
+COB-ID:  0x284 , velocity = 0
+received message name: TxPDO3_node2
+received message name: TxPDO3_node3
+received message name: TxPDO3_node4

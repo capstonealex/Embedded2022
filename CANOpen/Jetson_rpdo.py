@@ -1,17 +1,17 @@
 from sys import byteorder
 import canopen
-import cantools
+# import cantools
 import time
 import CircularBuffer
 
-num_rpdo = 18
+num_rpdo = 18 #1-8: exo motor; 9-12: crutch sensor
 
 # construct a CAN network
 network = canopen.Network()
 
 # connect to the CAN network
-network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-#network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+# network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
 # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
 Jetson_66 = network.create_node(66, 'Jetson_66_v11.eds')
@@ -61,7 +61,8 @@ def dec2hex(dec_value, datatype): # hex_value = object of rpdo in str matrix, da
     return hex_seg
 
 def process_rpdo(message): # "message" type: 'canopen.pdo.base.Map'; var type: 'canopen.pdo.base.Variable'  
-    print('%s received' % message.name)
+    # print('received message name:',message.name)
+    # print('COB-ID:',message.cob_id) not like 0x281 format
     cob_id = str(hex(message.cob_id))
     # Add crutch sensor pdo criteria by message.cob_id
 
@@ -71,22 +72,31 @@ def process_rpdo(message): # "message" type: 'canopen.pdo.base.Map'; var type: '
     for var in message:
         splited_hex[i] = var.raw
         i = i+1
+        # print("Got crutch sensor data:", var.raw)
         # print('%s = %d' % (var.name, var.raw)) # var.name = str; var.raw = int(Raw representation of the object.)
         # print(type(splited_hex[0]))
-    if cob_id[2:3] == '2': # if rpdo is 0x2-- , split msg into position and velocity
-        # split list > create bytes class > convert bytes to int in little-endian
-        position = int.from_bytes(bytes(splited_hex[0:4]), byteorder='little', signed=True) 
-        velocity = int.from_bytes(bytes(splited_hex[4:8]), byteorder='little', signed=True)
-        position_circular.append(position)
-        velocity_circular.append(velocity)
-    if cob_id[2:3] == '3': # if rpdo is 0x3--, set denominator to 1 to extract all msg as torque
-        torque = int.from_bytes(bytes(splited_hex), byteorder='little')
-        torque_circular.append(torque)
+    # if cob_id[2:3] == '2': # if rpdo is 0x2-- , split msg into position and velocity
+    #     # split list > create bytes class > convert bytes to int in little-endian
+    #     position = int.from_bytes(bytes(splited_hex[0:4]), byteorder='little', signed=True) 
+    #     velocity = int.from_bytes(bytes(splited_hex[4:8]), byteorder='little', signed=True)
+    #     # position_circular.append(position) #need to fix different id's position into same position circular buffer
+    #     # velocity_circular.append(velocity)
+    #     print("COB-ID: ",cob_id,", position =", position)
+    #     print("COB-ID: ",cob_id,", velocity =", velocity)
+    # if cob_id[2:3] == '3': # if rpdo is 0x3--, set denominator to 1 to extract all msg as torque
+    #     # torque = int.from_bytes(bytes(splited_hex), byteorder='little')
+        # torque_circular.append(torque)
+        # print("COB-ID: ",cob_id,", torque =", torque)
+        
+    
+    if cob_id[3] == 'F': # if rpdo is 0xF--, convert to crutch sensor data
+          print("Got crutch sensor data:", var.raw)
     
     
-    print("position =", position)
-    print("position circular=", position_circular)
-    # print("velocity =", velocity)
+    
+    
+    # print("position circular=", position_circular)
+    
     # position_dec = hex2dec(position_hex, byteorder="little")
 
 position_circular = CircularBuffer.circularlist(4)
@@ -95,11 +105,48 @@ torque_circular = CircularBuffer.circularlist(4)
 input_data = CircularBuffer.circularlist(4)
 
 for i in range(1,num_rpdo):
-    Jetson_66.rpdo[i].add_callback(process_rpdo)
+    #   Jetson_66.rpdo[i].add_callback(process_rpdo)
+    print(str(hex(Jetson_66.rpdo[i].cob_id)))
+    print(Jetson_66.rpdo[i].name)
     
-
+#print(str(hex(Jetson_66.rpdo[0].cob_id)))
 
 
 while(True):
     
     time.sleep(1)
+# CAN BUS configuration completed, waiting RPDO...
+# 0x281
+# TxPDO2_node1
+# 0x282
+# TxPDO2_node2
+# 0x382
+# TxPDO3_node2
+# 0x283
+# TxPDO2_node3
+# 0x383
+# TxPDO3_node3
+# 0x284
+# TxPDO2_node4
+# 0x384
+# TxPDO3_node4
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
+# 0x0
+# Unknown
