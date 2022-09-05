@@ -40,3 +40,5 @@ class MLModel(object):
         print('Priority list output in string:')
         for i in range(0,len(prob_class_list)):
            print(get_key(prob_class_list[i][1]))
+
+        return get_key(prob_class_list[0][1])
