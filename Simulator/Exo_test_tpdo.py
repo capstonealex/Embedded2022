@@ -36,14 +36,14 @@ time.sleep(2)
 #convert hex signed 2's complement to int
 # def hex2dec(hex_value, datatype): # hex_value = object of rpdo in str matrix, datatype = desired decimal data type
 #     if datatype == 'int32': # motor position and velocity data type
-#         num_bit = 4
+#         num_byte = 4
 #     if datatype == 'int16': # motor torque data type
-#         num_bit = 2
+#         num_byte = 2
 #     # if datatype == 'int32': # crutch force sensor data type
-#     #     num_bit = 2
+#     #     num_byte = 2
     
-#     hex_seg = [0]*num_bit
-#     for i in range(num_bit):
+#     hex_seg = [0]*num_byte
+#     for i in range(num_byte):
 #         hex_seg[i] = hex_str[0:2]
 
 #     return 
@@ -51,18 +51,40 @@ time.sleep(2)
 #convert int to hex signed 2's complement
 def dec2hex(dec_value, datatype): # hex_value = object of rpdo in str matrix, datatype = desired decimal data type
     if datatype == 'int32': # motor position and velocity data type
-        num_bit = 4
+        num_byte = 4
     if datatype == 'int16': # motor torque data type
-        num_bit = 2
+        num_byte = 2
     # if datatype == 'int32': # crutch force sensor data type
-    #     num_bit = 2
+    #     num_byte = 2
 
-    valueInByte = (dec_value).to_bytes(num_bit, byteorder="little", signed=True) # signed=True: include negative int
+    valueInByte = (dec_value).to_bytes(num_byte, byteorder="little", signed=True) # signed=True: include negative int
     # hexadecimal_result = format(dec_value, "03X")
-    # hex_str = hexadecimal_result.zfill(num_bit*2)
-    hex_seg = [0]*num_bit
-    for i in range(num_bit):
+    # hex_str = hexadecimal_result.zfill(num_byte*2)
+    hex_seg = [0]*num_byte
+    for i in range(num_byte):
         hex_seg[i] = int.from_bytes(valueInByte[0+i:1+i], byteorder="little")
+    return hex_seg
+
+# def config_pdo(value):
+#     input_value = [value]*6
+#     for i in range(len(input_value)):
+#         input_value[i] = value - 16*i
+    
+def crutch2can(value, datatype): #convert a float to 2 one bye can message force_H and force_L
+    if datatype == 'force': # motor position and velocity data type
+        den = 50
+    if datatype == 'torque': # motor torque data type
+        den = 2000
+    signed16bit_raw = int(value*den)
+    #convert unsigned 16 bit to signed 16 bit: signed int16 = unsigned int16 - 2^16
+    unsigned16bit_raw = signed16bit_raw + 2^16
+    # signed=False: NOT include negative int
+    # 2: 2 byte means int16
+    num_byte = 2
+    valueInByte = (unsigned16bit_raw).to_bytes(num_byte, byteorder="big", signed=True) 
+    hex_seg = [0]*num_byte
+    for i in range(num_byte):
+        hex_seg[i] = int.from_bytes(valueInByte[0+i:1+i], byteorder="big")
     return hex_seg
 
 # test sending PDO to set output
@@ -70,9 +92,23 @@ print("test sending PDO to set output")
 
 
 test_id = 9
+# test list: (ignore this list)
+# id = 0: No one
+# id = 1: All
+# id = 2: Left Hip Motor
+# id = 3: Left Knee Motor
+# id = 4: Right Hip Motor
+# id = 5: Right Knee Motor
+# id = 6: Left Crutch
+# id = 7: Right Crutch
+# id = 8: Logger
+# id = 9: Main Exo Controller
+# id = 10: Crutch UI Controller
 
 
-def config_pdo(id, value):
+
+
+def transmit_pdo(id, value):
     splited_value_1 = 0
     splited_value_2 = 0
     print("Testing TPDO:",id )
@@ -145,22 +181,53 @@ def config_pdo(id, value):
         Exo_test.tpdo[id][0x2036].raw = splited_value_1[1]
         print("TPDO Transmit value = ", write_data)
     elif(id==9):
-        print("Testing TPDO:",id)
-        splited_value_1 = dec2hex(write_data, 'int32')
-        splited_value_2 = dec2hex(write_data-16, 'int32')
-        Exo_test.tpdo[id][0x2037].raw = splited_value_1[0]
-        Exo_test.tpdo[id][0x2038].raw = splited_value_1[1]
-        Exo_test.tpdo[id][0x2039].raw = splited_value_1[2]
-        Exo_test.tpdo[id][0x203A].raw = splited_value_1[3]
-        Exo_test.tpdo[id][0x203B].raw = splited_value_2[0]
-        Exo_test.tpdo[id][0x203C].raw = splited_value_2[1]
-        Exo_test.tpdo[id][0x203D].raw = splited_value_2[2]
-        Exo_test.tpdo[id][0x203E].raw = splited_value_2[3]
-        print("TPDO Transmit value = ", write_data, write_data-16)
+        #convert unsigned 16 bit to signed 16 bit: signed int16 = unsigned int16 - 2^16
+        crutch_input_force_data = write_data/50
+        crutch_input_torque_data = write_data/2000
+        force_can = crutch2can(crutch_input_force_data, "force")
+        torque_can = crutch2can(crutch_input_torque_data, "torque")
+        Exo_test.tpdo[9][0x2037].raw = 0
+        Exo_test.tpdo[9][0x2038].raw = force_can[0]
+        Exo_test.tpdo[9][0x2039].raw = force_can[1]
+        Exo_test.tpdo[9][0x203A].raw = force_can[0]
+        Exo_test.tpdo[9][0x203B].raw = force_can[1]
+        Exo_test.tpdo[9][0x203C].raw = force_can[0]
+        Exo_test.tpdo[9][0x203D].raw = force_can[1]
+        Exo_test.tpdo[9][0x203E].raw = torque_can[0]
+        Exo_test.tpdo[10][0x203F].raw = torque_can[1]
+        Exo_test.tpdo[10][0x2040].raw = torque_can[0]
+        Exo_test.tpdo[10][0x2041].raw = torque_can[1]
+        Exo_test.tpdo[10][0x2042].raw = torque_can[0]
+        Exo_test.tpdo[10][0x2043].raw = torque_can[1]
+        Exo_test.tpdo[10][0x2044].raw = 0
+        Exo_test.tpdo[10][0x2045].raw = 0
+        Exo_test.tpdo[10][0x2046].raw = 0
+        print("TPDO Transmit value = ", crutch_input_force_data, crutch_input_torque_data)
     elif(id==10):
         print("Testing TPDO:",id)
     elif(id==11):
-        print("Testing TPDO:",id)
+        #convert unsigned 16 bit to signed 16 bit: signed int16 = unsigned int16 - 2^16
+        crutch_input_force_data = write_data/50
+        crutch_input_torque_data = write_data/2000
+        force_can = crutch2can(crutch_input_force_data, "force")
+        torque_can = crutch2can(crutch_input_torque_data, "torque")
+        Exo_test.tpdo[11][0x2047].raw = 0
+        Exo_test.tpdo[11][0x2048].raw = force_can[0]
+        Exo_test.tpdo[11][0x2049].raw = force_can[1]
+        Exo_test.tpdo[11][0x204A].raw = force_can[0]
+        Exo_test.tpdo[11][0x204B].raw = force_can[1]
+        Exo_test.tpdo[11][0x204C].raw = force_can[0]
+        Exo_test.tpdo[11][0x204D].raw = force_can[1]
+        Exo_test.tpdo[11][0x204E].raw = torque_can[0]
+        Exo_test.tpdo[12][0x204F].raw = torque_can[1]
+        Exo_test.tpdo[12][0x2050].raw = torque_can[0]
+        Exo_test.tpdo[12][0x2051].raw = torque_can[1]
+        Exo_test.tpdo[12][0x2052].raw = torque_can[0]
+        Exo_test.tpdo[12][0x2053].raw = torque_can[1]
+        Exo_test.tpdo[12][0x2054].raw = 0
+        Exo_test.tpdo[12][0x2055].raw = 0
+        Exo_test.tpdo[12][0x2056].raw = 0
+        print("TPDO Transmit value = ", crutch_input_force_data, crutch_input_torque_data)
     elif(id==12):
         print("Testing TPDO:",id)
     elif(id==13):
@@ -177,6 +244,8 @@ def config_pdo(id, value):
         print("Testing TPDO:",id)
     
     Exo_test.tpdo[id].transmit()
+    if(id>=9):
+        Exo_test.tpdo[id+1].transmit()
     
     
 
@@ -191,7 +260,7 @@ try:
 
         position_data = dec2hex(write_data, 'int32')
 
-        config_pdo(test_id, write_data)
+        transmit_pdo(test_id, write_data)
         # if write_data > 0xFF:
         #     write_data = 0
         # print("position_data: %d",position_data)
@@ -212,7 +281,7 @@ try:
 
         # Exo_test.tpdo[1].transmit()
         # print("write output value = {}".format(Exo_test.tpdo[1][0x2000].raw))
-        time.sleep(0.1)
+        time.sleep(1)
 except KeyboardInterrupt:
     print("exit from sending PDO to Jetson")
 
