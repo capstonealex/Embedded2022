@@ -39,6 +39,7 @@ Left_crutch_data = [0]*6
 Right_crutch_data = [0]*6
 isPDOreceived = [0]*12
 startTime = time.perf_counter()
+# test git
 
 
 def process_rpdo(message): # "message" type: 'canopen.pdo.base.Map'; var type: 'canopen.pdo.base.Variable'  
