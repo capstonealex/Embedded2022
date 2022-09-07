@@ -18,8 +18,8 @@ class CANNetwork(Network):
         self.network = canopen.Network()
 
         # connect to the CAN network
-        #self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-        self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+        self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+        # self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
         # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
         self.node = self.network.create_node(self.nodeid , self.edsfileName )
