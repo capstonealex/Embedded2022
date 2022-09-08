@@ -7,6 +7,7 @@ class Converter():
         self.rawmsg = None
         self.Left_crutch_data = [0]*12
         self.Right_crutch_data = [0]*12
+    
 
     def position(self, rawmsg):
         position = int.from_bytes(bytes(rawmsg[0:4]), byteorder='little', signed=True) 
@@ -39,7 +40,7 @@ class Converter():
 
     def Left_crutch_data_2(self, data_1, rawmsg):
         for i in range(5):
-            data_1[i+7:] = rawmsg[i]
+            data_1[i+7] = rawmsg[i]
         for i in range(0,6):
             self.Left_crutch_data[i] = int.from_bytes(bytes(data_1[0+2*i:2+2*i]), byteorder='big', signed=True)
             self.Left_crutch_data[i] = self.Left_crutch_data[i] - 2^16
