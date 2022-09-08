@@ -11,13 +11,13 @@ from CANNetwork import CANNetwork
 
 num_rpdo = 18
 
-Jetson = CANNetwork(66, num_rpdo, 'Jetson_66_v12.eds')
+
+model_input_circular  = CircularBuffer.circularlist(2400)
+Jetson = CANNetwork(66, num_rpdo, 'Jetson_66_v12.eds', model_input_circular)
 
 Jetson.Setup()
 
 print("CAN BUS configuration completed, waiting RPDO...")
-
-model_input_circular = Jetson.model_input_circular
 
 Jetson.Update()
 
@@ -31,7 +31,7 @@ intents = {
 myMLModel = MLModel('walk_L_ML_model.joblib','walk_L_PCA.joblib',intents)
 
 # print("isPDOreceived",isPDOreceived)
-model_input_circular  = CircularBuffer.circularlist(2400)
+
 
 while(True):
     #Perform Prediction using ML model and Exo data
@@ -40,4 +40,3 @@ while(True):
         prediction = myMLModel.make_prediction([model_input_circular.Data])
         print('The Prediction is:')
         print(prediction)
-    

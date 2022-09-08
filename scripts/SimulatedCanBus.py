@@ -1,4 +1,3 @@
-import canopen
 import time
 import os
 import argparse
@@ -24,7 +23,6 @@ class CANSimulator:
                     msg = msg + data
                 canCommand.append(msg)
                 os.system(' '.join(canCommand))
-                time.sleep(0.001)
 
 
 if __name__ == "__main__": 
