@@ -41,6 +41,7 @@ class CANNetwork(Network):
         self.Right_unsigned16bit_raw = [0]*12
         self.tempbuffer = [0] * 24
         self.startTime = time.perf_counter()
+        self.rpdo_converter = Converter()
         
     
     def Setup(self):
@@ -49,8 +50,8 @@ class CANNetwork(Network):
         self.network = canopen.Network()
 
         # connect to the CAN network
-        #self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-        self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+        self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+        #self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
         # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
         self.node = self.network.create_node(self.nodeid , self.edsfileName )
@@ -79,7 +80,7 @@ class CANNetwork(Network):
         #     i = i+1
         #     # print('%s = %d' % (var.name, var.raw)) # var.name = str; var.raw = int(Raw representation of the object.)
             # print(type(splited_hex[0]))
-        self.rpdo_converter = Converter()
+       
 
 
         # Left Hip Motor   
@@ -133,38 +134,14 @@ class CANNetwork(Network):
                 #self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
                 #    self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
                 self.isPDOreceived[11] = 1
-            # print("Right_crutch_data",Right_crutch_data)
-
-        if sum(self.isPDOreceived) == 12:
-            for i in range(24):
-                self.model_input_circular.append(self.tempbuffer[i]) 
-
-            # for i in range(6):
-            #     self.model_input_circular.append(Left_crutch_data[i])
-            # for i in range(6):
-            #     self.model_input_circular.append(Right_crutch_data[i])
-            # self.model_input_circular.append(LH_position)
-            # self.model_input_circular.append(LK_position)
-            # self.model_input_circular.append(RH_position)
-            # self.model_input_circular.append(RK_position)
-            # self.model_input_circular.append(LH_velocity)
-            # self.model_input_circular.append(LK_velocity)
-            # self.model_input_circular.append(RH_velocity)
-            # self.model_input_circular.append(RK_velocity)
-            # self.model_input_circular.append(LH_torque)
-            # self.model_input_circular.append(LK_torque)
-            # self.model_input_circular.append(RH_torque)
-            # self.model_input_circular.append(RK_torque)
-            self.isPDOreceived = [0]*12
-            self.tempbuffer = [0]*24
-            print("model_input_circular=", self.model_input_circular.ActualSize)
-            print("Time since last fill =", float(time.perf_counter() - self.startTime))
-
-
+    @profile
     def Update(self): 
     ## Any polling goes here 
         for i in range(1,self.num_rpdo):
-            self.node.rpdo[i].add_callback(self.process_rpdo)
+            self.process_rpdo(self.node.rpdo[i])
+        for i in range(24):
+                self.model_input_circular.append(self.tempbuffer[i]) 
+        print(self.tempbuffer)
 
     def SetupHardware(self):
     ## For setting up hardware (might not be in use
