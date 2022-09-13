@@ -9,7 +9,6 @@ class circularlist(object):
         self.index = 0
         self.size = size
         self._data = list(data)[-size:]
-        self._actualSize = 0
         #self._data = list([0 for i in range(size+1)])
 
     @property
@@ -24,7 +23,7 @@ class circularlist(object):
             self._data[self.index] = value
         else:
             self._data.append(value)
-        self.index = (self.index + 1)%self.size
+        self.index = (self.index + 1) % self.size
 
     def __getitem__(self, key):
         """Get element by index, relative to the current index"""

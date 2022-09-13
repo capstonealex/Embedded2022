@@ -6,6 +6,7 @@ from abc import abstractmethod
 from interface.Network import Network
 from Converter import Converter
 import CircularBuffer
+from multiprocessing import Pool
 from enum import IntEnum
 
 class DataOrder(IntEnum):
@@ -40,17 +41,19 @@ class CANNetwork(Network):
         self.Left_unsigned16bit_raw = [0]*12
         self.Right_unsigned16bit_raw = [0]*12
         self.tempbuffer = [0] * 24
-        self.startTime = time.perf_counter()
+        self.num_pdo_received = [0]*12
+        self.rpdo_converter = Converter()
+        #self.startTime = 0
         
-    
+   # @profile
     def Setup(self):
     ## Setup the connection object
     # construct a CAN network
         self.network = canopen.Network()
 
         # connect to the CAN network
-        #self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-        self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+        self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+        #self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
         # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
         self.node = self.network.create_node(self.nodeid , self.edsfileName )
@@ -64,8 +67,61 @@ class CANNetwork(Network):
         # send pdo message
         self.node.rpdo.read()
         self.node.tpdo.read()
+        self.startTime = time.perf_counter()
 
+    def process_281(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.LH_position] = self.rpdo_converter.position(splited_hex)
+        self.tempbuffer[DataOrder.LH_velocity] = self.rpdo_converter.velocity(splited_hex)
+        self.isPDOreceived[0] = 1
+        self.num_pdo_received[0] += 1
+
+    def process_282(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.LK_position] = self.rpdo_converter.position(splited_hex)
+        self.tempbuffer[DataOrder.LK_velocity] = self.rpdo_converter.velocity(splited_hex)
+        self.isPDOreceived[2] = 1
+        self.num_pdo_received[2] += 1
+
+    def process_283(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.RH_position] = self.rpdo_converter.position(splited_hex)
+        self.tempbuffer[DataOrder.RH_velocity] = self.rpdo_converter.velocity(splited_hex)
+        self.isPDOreceived[4] = 1
+        self.num_pdo_received[4] += 1
+
+    def process_284(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.RK_position] = self.rpdo_converter.position(splited_hex)
+        self.tempbuffer[DataOrder.RK_velocity] = self.rpdo_converter.velocity(splited_hex)
+        self.isPDOreceived[6] = 1
+        self.num_pdo_received[6] += 1
+    def process_381(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.LH_torque] = self.rpdo_converter.torque(splited_hex)
+        self.isPDOreceived[1] = 1
+        self.num_pdo_received[1] += 1
+    def process_382(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.LK_torque] = self.rpdo_converter.torque(splited_hex)
+        self.isPDOreceived[3] = 1
+        self.num_pdo_received[3] += 1
+
+    def process_383(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.RH_torque] = self.rpdo_converter.torque(splited_hex)
+        self.isPDOreceived[5] = 1
+        self.num_pdo_received[5] += 1
+        
+    def process_384(self, message):
+        splited_hex = [var.raw for var in message]
+        self.tempbuffer[DataOrder.RK_torque] = self.rpdo_converter.torque(splited_hex)
+        self.isPDOreceived[7] = 1
+        self.num_pdo_received[7] += 1
+
+    #@profile
     def process_rpdo(self,message): # "message" type: 'canopen.pdo.base.Map'; var type: 'canopen.pdo.base.Variable'  
+        
         # print('%s received' % message.name)
         cob_id = str(hex(message.cob_id))
         # Add crutch sensor pdo criteria by message.cob_id
@@ -77,8 +133,9 @@ class CANNetwork(Network):
         # for var in message:
         #     splited_hex[i] = var.raw
         #     i = i+1
-        #     # print('%s = %d' % (var.name, var.raw)) # var.name = str; var.raw = int(Raw representation of the object.)
-            # print(type(splited_hex[0]))
+        # #     # print('%s = %d' % (var.name, var.raw)) # var.name = str; var.raw = int(Raw representation of the object.)
+        # print(splited_hex)
+        # print(splited_hex2)
         self.rpdo_converter = Converter()
 
 
@@ -88,84 +145,107 @@ class CANNetwork(Network):
             self.tempbuffer[DataOrder.LH_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.LH_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[0] = 1
+            self.num_pdo_received[0] += 1
         elif cob_id[2:5] == '381': # if rpdo is 0x3--, set denominator to 1 to extract all msg as torque
             self.tempbuffer[DataOrder.LH_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[1] = 1
+            self.num_pdo_received[1] += 1
         # Left Knee Motor
         elif cob_id[2:5] == '282':
             self.tempbuffer[DataOrder.LK_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.LK_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[2] = 1
+            self.num_pdo_received[2] += 1
         elif cob_id[2:5] == '382':
             self.tempbuffer[DataOrder.LK_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[3] = 1
+            self.num_pdo_received[3] += 1
+
         # Right Hip Motor
         elif cob_id[2:5] == '283':
             self.tempbuffer[DataOrder.RH_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.RH_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[4] = 1
+            self.num_pdo_received[4] += 1
         elif cob_id[2:5] == '383':
             self.tempbuffer[DataOrder.RH_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[5] = 1
+            self.num_pdo_received[5] += 1
         # Right Knee Motor
         elif cob_id[2:5] == '284':
             self.tempbuffer[DataOrder.RK_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.RK_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[6] = 1
+            self.num_pdo_received[6] += 1
         elif cob_id[2:5] == '384':
             self.tempbuffer[DataOrder.RK_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[7] = 1
+            self.num_pdo_received[7] += 1
         # Config crutch sensor data convertion
-        elif cob_id[2:4] == 'f1':
-            #self.Left_unsigned16bit_raw = self.rpdo_converter.Left_crutch_data_1(splited_hex)
-            self.isPDOreceived[8] = 1
-        elif cob_id[2:4] == 'f9':
-            #self.Right_unsigned16bit_raw = self.rpdo_converter.Right_crutch_data_1(splited_hex)
-            self.isPDOreceived[9] = 1
-        elif cob_id[2:4] == 'f2':
-            if self.isPDOreceived[8] == 1:
-                #self.tempbuffer[DataOrder.L_CRUTCH: DataOrder.L_CRUTCH+6] = \
-                #     self.rpdo_converter.Left_crutch_data_2(self.Left_unsigned16bit_raw, splited_hex)
-                self.isPDOreceived[10] = 1
-            # print("Left_crutch_data",Left_crutch_data)
-        elif cob_id[2:4] == 'fa':
-            if self.isPDOreceived[9] == 1:
-                #self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
-                #    self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
-                self.isPDOreceived[11] = 1
-            # print("Right_crutch_data",Right_crutch_data)
+        # elif cob_id[2:4] == 'f1':
+        #     self.Left_unsigned16bit_raw = self.rpdo_converter.Left_crutch_data_1(splited_hex)
+        #     self.isPDOreceived[8] = 1
+        # elif cob_id[2:4] == 'f9':
+        #     self.Right_unsigned16bit_raw = self.rpdo_converter.Right_crutch_data_1(splited_hex)
+        #     self.isPDOreceived[9] = 1
+        # elif cob_id[2:4] == 'f2':
+        #     #if self.isPDOreceived[8] == 1:
+        #         #self.tempbuffer[DataOrder.L_CRUTCH: DataOrder.L_CRUTCH+6] = \
+        #         #     self.rpdo_converter.Left_crutch_data_2(self.Left_unsigned16bit_raw, splited_hex)
+        #       #  self.isPDOreceived[10] = 1
+        #     # print("Left_crutch_data",Left_crutch_data)
+        # elif cob_id[2:4] == 'fa':
+        #     #if self.isPDOreceived[9] == 1:
+        #         #self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
+        #         #    self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
+        #      #   self.isPDOreceived[11] = 1
+        #     # print("Right_crutch_data",Right_crutch_data)
 
-        if sum(self.isPDOreceived) == 12:
+        if sum(self.isPDOreceived) >= 8:
             for i in range(24):
                 self.model_input_circular.append(self.tempbuffer[i]) 
+            self.isPDOreceived = [0]*12  
+            #print(self.model_input_circular.ActualSize)
+            #print(float(time.perf_counter() - self.startTime))
 
-            # for i in range(6):
-            #     self.model_input_circular.append(Left_crutch_data[i])
-            # for i in range(6):
-            #     self.model_input_circular.append(Right_crutch_data[i])
-            # self.model_input_circular.append(LH_position)
-            # self.model_input_circular.append(LK_position)
-            # self.model_input_circular.append(RH_position)
-            # self.model_input_circular.append(RK_position)
-            # self.model_input_circular.append(LH_velocity)
-            # self.model_input_circular.append(LK_velocity)
-            # self.model_input_circular.append(RH_velocity)
-            # self.model_input_circular.append(RK_velocity)
-            # self.model_input_circular.append(LH_torque)
-            # self.model_input_circular.append(LK_torque)
-            # self.model_input_circular.append(RH_torque)
-            # self.model_input_circular.append(RK_torque)
-            self.isPDOreceived = [0]*12
-            self.tempbuffer = [0]*24
-            print("model_input_circular=", self.model_input_circular.ActualSize)
-            print("Time since last fill =", float(time.perf_counter() - self.startTime))
-
-
+   # @profile
     def Update(self): 
     ## Any polling goes here 
-        for i in range(1,self.num_rpdo):
-            self.node.rpdo[i].add_callback(self.process_rpdo)
+        # TODO
+        for i in range(1, 18):
+            print("index {}, name {}, cobid {}".format(i, self.node.rpdo[i].name, self.node.rpdo[i].cob_id))
+
+        # for i in range(1,8):
+        #     self.node.rpdo[i].add_callback(self.process_rpdo)
+        # for i in range(14, 18):
+        #     self.node.rpdo[i].add_callback(self.process_rpdo)
+        self.node.rpdo[1].add_callback(self.process_281)
+        self.node.rpdo[2].add_callback(self.process_381)
+        self.node.rpdo[3].add_callback(self.process_282)
+        self.node.rpdo[4].add_callback(self.process_382)
+        self.node.rpdo[5].add_callback(self.process_283)
+        self.node.rpdo[6].add_callback(self.process_383)
+        self.node.rpdo[7].add_callback(self.process_284)
+        self.node.rpdo[8].add_callback(self.process_384)
+        # self.node.rpdo[9].add_callback(self.process_)
+        # self.node.rpdo[10].add_callback(self.process_383)
+        # self.node.rpdo[11].add_callback(self.process_383)
+        # self.node.rpdo[12].add_callback(self.process_383)
+        # self.node.rpdo[13].add_callback(self.process_383)
+        # self.node.rpdo[14].add_callback(self.process_383)
+        #self.node.rpdo[15].add_callback(self.process_383)
+        #self.node.rpdo[16].add_callback(self.process_383)
+        #self.node.rpdo[17].add_callback(self.process_383)
+
+
+
+
+
+
+            
 
     def SetupHardware(self):
+        print("Num RPDO received")
+        print(self.num_pdo_received)
     ## For setting up hardware (might not be in use
         pass
