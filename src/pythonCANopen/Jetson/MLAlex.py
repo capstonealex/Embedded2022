@@ -10,8 +10,8 @@ class MLAlex(object):
         self.walkRModel = MLModel('walk_R_ML_model.joblib','walk_R_PCA.joblib',self.intents_walkR)
         self.standModel = MLModel('stand_ML_model.joblib','walk_L_PCA.joblib',self.standModel)
 
-    def make_prediction(self, currentState):
-        """Perform Prediction using ML model and Exo data"""
+    def make_prediction(self, currentState, data):
+        """Perform Prediction using current state, ML model and Exo data"""
         data_PCA = self.pcaModel.transform(data)
         intent_predict_proba = self.mlModel.predict_proba(data_PCA) 
         #print('Prediction probability: {}'.format(intent_predict_proba))
