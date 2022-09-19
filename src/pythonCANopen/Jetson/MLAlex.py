@@ -16,7 +16,7 @@ class MLAlex(object):
         #Create a dictionary that maps the currrent state to the corresponsing Machine Learning model
         state_dictionary = {"Left Forward": self.walkLModel, "Right Forward": self.walkRModel, "Standing": self.standModel}
         
-        #Perform the machine elarning predictionusing the correct model
+        #Perform the machine learning predictionusing the correct model
         prediction = state_dictionary[currentState].make_prediction(data)
 
         return prediction
