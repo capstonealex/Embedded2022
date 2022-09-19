@@ -6,7 +6,9 @@ import CircularBuffer
 # from numpy import loadtxt
 from MLAlex import MLAlex
 from threading import Timer
+import time
 from CANNetwork import CANNetwork
+import keyboard
 
 class RepeatTimerThread(Timer):
     def run(self):
@@ -41,12 +43,21 @@ myModel = MLAlex()
 
 thread.start()
 while(True):
-    #Perform Prediction using ML model and Exo data
-    #print([model_input_circular.Data])
+#     if keyboard.is_pressed("q"):
+#         Jetson.SetupHardware()
+#         break
+    print(model_input_circular)
     if model_input_circular.ActualSize > 2400:
         my_prediction = myModel.predict_state(Jetson.current_state, model_input_circular.Data)
         # prediction = myMLModel.make_prediction([model_input_circular.Data])
         print('The Prediction is:', my_prediction)
         # need to create a mapping
         Jetson.transmit_prediction(my_prediction)
+    pass
+
 thread.cancel()
+    #Perform Prediction using ML model and Exo data
+    #print([model_input_circular.Data]
+        # prediction = myMLModel.make_prediction([model_input_circular.Data])
+        # print('The Prediction is:')
+        # print(prediction)
