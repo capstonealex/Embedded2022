@@ -28,6 +28,7 @@ class Converter():
         # for i in range(7):
         #     self.Left_crutch_data[i] = rawmsg[i+1]
         self.Left_crutch_data[0:7] = [rawmsg[i+1] for i in range(7)]
+        self.Left_crutch_data[7:12] = [0]*6
         #print(self.Left_crutch_data)
         return self.Left_crutch_data
 
@@ -35,6 +36,7 @@ class Converter():
         # for i in range(7):
         #    self.Right_crutch_data[i] = rawmsg[i+1]
         self.Right_crutch_data[0:7] = [rawmsg[i+1] for i in range(7)]
+        self.Right_crutch_data[7:12] = [0]*6
         #print(self.Right_crutch_data)
         return self.Right_crutch_data
 

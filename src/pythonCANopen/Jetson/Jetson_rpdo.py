@@ -6,7 +6,9 @@ import CircularBuffer
 # from numpy import loadtxt
 #from MLModel import MLModel
 from threading import Timer
+import time
 from CANNetwork import CANNetwork
+import keyboard
 
 class RepeatTimerThread(Timer):
     def run(self):
@@ -39,11 +41,15 @@ intents = {
 
 thread.start()
 while(True):
+#     if keyboard.is_pressed("q"):
+#         Jetson.SetupHardware()
+#         break
+    print(model_input_circular)
+    pass
+
+thread.cancel()
     #Perform Prediction using ML model and Exo data
-    #print([model_input_circular.Data])
-    if model_input_circular.ActualSize > 10000:
-        break
+    #print([model_input_circular.Data]
         # prediction = myMLModel.make_prediction([model_input_circular.Data])
         # print('The Prediction is:')
         # print(prediction)
-thread.cancel()
