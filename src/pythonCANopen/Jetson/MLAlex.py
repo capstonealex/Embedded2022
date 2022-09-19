@@ -8,7 +8,7 @@ class MLAlex(object):
         self.intents_stand = {"stand~back": 0, "stand~fwd": 1, "stand~sit": 2}
         self.walkLModel = MLModel('walk_L_ML_model.joblib','walk_L_PCA.joblib',self.intents_walkL)
         self.walkRModel = MLModel('walk_R_ML_model.joblib','walk_R_PCA.joblib',self.intents_walkR)
-        self.standModel = MLModel('stand_ML_model.joblib','stand_PCA.joblib',self.standModel)
+        self.standModel = MLModel('stand_ML_model.joblib','stand_PCA.joblib',self.intents_stand)
         
 
     def predict_state(self, currentState, data):
@@ -17,6 +17,6 @@ class MLAlex(object):
         state_dictionary = {"Left Forward": self.walkLModel, "Right Forward": self.walkRModel, "Standing": self.standModel}
         
         #Perform the machine elarning predictionusing the correct model
-        prediction = self.state_dictionary[currentState](data)
+        prediction = state_dictionary[currentState].make_prediction(data)
 
         return prediction
