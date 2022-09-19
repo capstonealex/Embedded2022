@@ -42,6 +42,7 @@ class CANNetwork(Network):
         self.tempbuffer = [0] * 24
         self.startTime = time.perf_counter()
         self.rpdo_converter = Converter()
+        self.current_state = [0]
         
     
     def Setup(self):
@@ -134,6 +135,13 @@ class CANNetwork(Network):
                 #self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
                 #    self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
                 self.isPDOreceived[11] = 1
+        elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
+            self.current_state = splited_hex
+
+    def transmit_prediction(self, prediction):
+        self.node.tpdo[1][0x2000].raw = prediction
+        self.node.tpdo[1].transmit()
+
     @profile
     def Update(self): 
     ## Any polling goes here 
