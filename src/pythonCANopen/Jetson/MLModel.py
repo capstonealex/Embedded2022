@@ -1,6 +1,5 @@
-# This class creates a prediction model consisting of a
-# Machine Learning object a Principle Compoenent Analysis model
-# and an Intent Dictionary.
+# This class creates a prediction model consisting of a Machine Learning joblib object,
+# a Principle Componenent Analysis joblib object and an Intent Dictionary.
 # The make_prediction method predicts the next exo state based one full test data set 
 
 from joblib import load
