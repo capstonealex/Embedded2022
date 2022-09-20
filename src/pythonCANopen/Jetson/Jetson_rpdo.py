@@ -14,6 +14,10 @@ class RepeatTimerThread(Timer):
     def run(self):
         while not self.finished.wait(self.interval):
             self.function(*self.args, **self.kwargs)
+    def pause(self):
+        self.cancel()
+    def restart(self):
+        self.run()
 
 num_rpdo = 18
 
@@ -41,11 +45,18 @@ intents = {
 
 thread.start()
 while(True):
-#     if keyboard.is_pressed("q"):
-#         Jetson.SetupHardware()
-#         break
-    print(model_input_circular)
-    pass
+    if keyboard.is_pressed("q"):
+        Jetson.SetupHardware()
+        break
+    # if model_input_circular.ActualSize > 1000:
+    #     print(model_input_circular)
+    #     thread.pause()
+    #     time.sleep(2)
+    #     thread.restart()
+    #     print(model_input_circular)
+    #     time.sleep(2)
+    #     break
+    # pass
 
 thread.cancel()
     #Perform Prediction using ML model and Exo data
