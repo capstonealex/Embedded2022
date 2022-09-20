@@ -4,7 +4,7 @@ from sys import byteorder
 import canopen
 import CircularBuffer
 # from numpy import loadtxt
-#from MLModel import MLModel
+from MLAlex import MLAlex
 from threading import Timer
 import time
 from CANNetwork import CANNetwork
@@ -23,7 +23,7 @@ num_rpdo = 18
 
 
 model_input_circular  = CircularBuffer.circularlist(2400)
-Jetson = CANNetwork(66, num_rpdo, 'Jetson_66_v12.eds', model_input_circular)
+Jetson = CANNetwork(66, num_rpdo, 'Jetson_66_v2.eds', model_input_circular)
 
 Jetson.Setup()
 
@@ -39,24 +39,25 @@ intents = {
     "walkFL~stand": 1
 }
 #Create the ML model
+myModel = MLAlex()
+
 #myMLModel = MLModel('walk_L_ML_model.joblib','walk_L_PCA.joblib',intents)
 
 # print("isPDOreceived",isPDOreceived)
 
 thread.start()
 while(True):
-    if keyboard.is_pressed("q"):
-        Jetson.SetupHardware()
-        break
-    # if model_input_circular.ActualSize > 1000:
-    #     print(model_input_circular)
-    #     thread.pause()
-    #     time.sleep(2)
-    #     thread.restart()
-    #     print(model_input_circular)
-    #     time.sleep(2)
-    #     break
-    # pass
+#     if keyboard.is_pressed("q"):
+#         Jetson.SetupHardware()
+#         break
+    print(model_input_circular)
+    if model_input_circular.ActualSize > 2400:
+        my_prediction = myModel.predict_state(Jetson.current_state, model_input_circular.Data)
+        # prediction = myMLModel.make_prediction([model_input_circular.Data])
+        print('The Prediction is:', my_prediction)
+        # need to create a mapping
+        Jetson.transmit_prediction(my_prediction)
+    pass
 
 thread.cancel()
     #Perform Prediction using ML model and Exo data

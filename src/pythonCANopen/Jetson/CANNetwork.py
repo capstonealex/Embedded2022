@@ -44,6 +44,7 @@ class CANNetwork(Network):
         self.tempbuffer = [0] * 24
         self.startTime = 0
         self.rpdo_converter = Converter()
+        self.current_state = [0]
         
     
     def Setup(self):
@@ -198,6 +199,31 @@ class CANNetwork(Network):
             # print("Left_crutch_data",Left_crutch_data)
         elif cob_id[2:4] == 'fa':
             if self.isPDOreceived[9] == 1:
+<<<<<<< HEAD
+                #self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
+                #    self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
+                self.isPDOreceived[11] = 1
+        elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
+            self.current_state = splited_hex
+
+    def transmit_prediction(self, prediction):
+        self.node.tpdo[1][0x2000].raw = prediction
+        self.node.tpdo[1].transmit()
+
+    @profile
+    def Update(self): 
+    ## Any polling goes here 
+        for i in range(1,self.num_rpdo):
+            self.process_rpdo(self.node.rpdo[i])
+        for i in range(24):
+                self.model_input_circular.append(self.tempbuffer[i]) 
+        print(self.tempbuffer)
+
+    def SetupHardware(self):
+    ## For setting up hardware (might not be in use
+        pass
+=======
                 self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
                     self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
                 self.isPDOreceived[11] = 1
+>>>>>>> 0ed5e96c8acac6ffc83a909494b1c64ba9d757a5
