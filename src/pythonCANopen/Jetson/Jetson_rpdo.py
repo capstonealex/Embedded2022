@@ -8,7 +8,8 @@ from MLAlex import MLAlex
 from threading import Timer
 import time
 from CANNetwork import CANNetwork
-import keyboard
+
+
 
 class RepeatTimerThread(Timer):
     def run(self):
@@ -32,12 +33,35 @@ thread = RepeatTimerThread(0.01, Jetson.Update)
 
 print("CAN BUS configuration completed, waiting RPDO...")
 
+#This intent prediction dictionary 
+#maps the Machine Learning 'intent' string representations to the RobotMode representations of next state.
+# intents = {
+#     "walkFR~back": BKSTEP, 
+#     "walkFR~fwd": NORMALWALK,
+#     "walkFR~stand": FTTG, 
+#     "walkFL~fwd": NORMALWALK,
+#     "walkFL~stand": FTTG, 
+#     "stand~back": BKSTEP, 
+#     "stand~fwd": NORMALWALK,
+#     "stand~sit": SITDWN
+# }
 
-#Create the intent prediction dictionary
-intents = {
-    "walk~fwd": 0,
-    "walkFL~stand": 1
-}
+# enum class RobotMode {
+#     NORMALWALK, /**< 0 */
+#     SITDWN,     /**< 1 */
+#     STNDUP,     /**< 2 */
+#     UPSTAIR,    /**< 3 */
+#     DWNSTAIR,   /**< 4 */
+#     TILTUP,     /**< 5 */
+#     TILTDWN,    /**< 6 */
+#     RAMPUP,     /**< 7 */
+#     RAMPDWN,    /**< 8 */
+#     BKSTEP,     /**< 9 */
+#     FTTG,       /**< 10 */
+#     UNEVEN,     /**< 11 */
+#     INITIAL     /**< 12 */
+# };
+
 #Create the ML model
 myModel = MLAlex()
 
@@ -47,17 +71,14 @@ myModel = MLAlex()
 
 thread.start()
 while(True):
-#     if keyboard.is_pressed("q"):
-#         Jetson.SetupHardware()
-#         break
-    print(model_input_circular)
-    if model_input_circular.ActualSize > 2400:
-        my_prediction = myModel.predict_state(Jetson.current_state, model_input_circular.Data)
+    #print(model_input_circular)
+    if model_input_circular.ActualSize >= 2400:
+        my_prediction = myModel.predict_state(Jetson.current_state, [model_input_circular.Data])
         # prediction = myMLModel.make_prediction([model_input_circular.Data])
         print('The Prediction is:', my_prediction)
         # need to create a mapping
         Jetson.transmit_prediction(my_prediction)
-    pass
+    # pass
 
 thread.cancel()
     #Perform Prediction using ML model and Exo data

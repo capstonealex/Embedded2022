@@ -26,12 +26,12 @@ class MLModel(object):
 
         # Sort the priority list in descending order
         prob_class_list.sort(reverse=True)
-
-        #Output the prediction as a string
-        def get_key(val):
-            for key, value in self.intentsDictionary.items():
-                if val == value:
-                    return key
-            return "key doesn't exist"
-
-        return get_key(prob_class_list[0][1])
+    
+        # #Output the prediction as a string
+        # def get_key(val):
+        #     for key, value in self.intentsDictionary.items():
+        #         if val == value:
+        #             return key
+        #     return "key doesn't exist"
+        return self.intentsDictionary[prob_class_list[0][1]]
+        #return get_key(prob_class_list[0][1])

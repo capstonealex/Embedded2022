@@ -7,7 +7,6 @@ from interface.Network import Network
 from Converter import Converter
 import CircularBuffer
 from enum import IntEnum
-import keyboard
 
 class DataOrder(IntEnum):
     L_CRUTCH = 0 #crutch has 6 data each
@@ -44,7 +43,7 @@ class CANNetwork(Network):
         self.tempbuffer = [0] * 24
         self.startTime = 0
         self.rpdo_converter = Converter()
-        self.current_state = [0]
+        self.current_state = 2
         
     
     def Setup(self):
@@ -53,8 +52,8 @@ class CANNetwork(Network):
         self.network = canopen.Network()
 
         # connect to the CAN network
-        self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-        #self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+        # self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+        self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
         # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
         self.node = self.network.create_node(self.nodeid , self.edsfileName )
@@ -131,6 +130,8 @@ class CANNetwork(Network):
         self.tempbuffer[DataOrder.RK_torque] = self.rpdo_converter.torque(splited_hex)
         self.isPDOreceived[7] = 1
         self.num_pdo_received[7] += 1
+
+    
     
     def Update(self): 
     ## Any polling goes here 
@@ -143,7 +144,7 @@ class CANNetwork(Network):
         print(self.num_pdo_received)
         print(self.pdoCount)
     ## For setting up hardware (might not be in use
-        pass 
+
     
     def process_rpdo(self,message): # "message" type: 'canopen.pdo.base.Map'; var type: 'canopen.pdo.base.Variable'  
         # print('%s received' % message.name)
@@ -199,31 +200,19 @@ class CANNetwork(Network):
             # print("Left_crutch_data",Left_crutch_data)
         elif cob_id[2:4] == 'fa':
             if self.isPDOreceived[9] == 1:
-<<<<<<< HEAD
-                #self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
-                #    self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
-                self.isPDOreceived[11] = 1
-        elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
-            self.current_state = splited_hex
-
-    def transmit_prediction(self, prediction):
-        self.node.tpdo[1][0x2000].raw = prediction
-        self.node.tpdo[1].transmit()
-
-    @profile
-    def Update(self): 
-    ## Any polling goes here 
-        for i in range(1,self.num_rpdo):
-            self.process_rpdo(self.node.rpdo[i])
-        for i in range(24):
-                self.model_input_circular.append(self.tempbuffer[i]) 
-        print(self.tempbuffer)
-
-    def SetupHardware(self):
-    ## For setting up hardware (might not be in use
-        pass
-=======
                 self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
                     self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
                 self.isPDOreceived[11] = 1
->>>>>>> 0ed5e96c8acac6ffc83a909494b1c64ba9d757a5
+        elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
+            self.current_state = splited_hex[0]
+
+    def transmit_prediction(self, prediction):
+        # print('prediction: ', prediction)
+        if prediction != 'invalid':
+            self.node.tpdo[1][0x2000].raw = prediction
+            self.node.tpdo[1].transmit()
+    
+    def Update(self): 
+        for i in range(24):
+            self.model_input_circular.append(self.tempbuffer[i]) 
+        
