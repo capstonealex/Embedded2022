@@ -1,14 +1,14 @@
 [FileInfo]
-FileName=Jetson_66_v12.eds
+FileName=Jetson_66_v21.eds
 FileVersion=1
 FileRevision=1
 EDSVersion=4.0
 Description=
-CreationTime=03:30PM
-CreationDate=09-02-2022
+CreationTime=04:22PM
+CreationDate=09-23-2022
 CreatedBy=CANFestival
-ModificationTime=03:30PM
-ModificationDate=09-02-2022
+ModificationTime=04:22PM
+ModificationDate=09-23-2022
 ModifiedBy=CANFestival
 
 [DeviceInfo]
@@ -31,7 +31,7 @@ Granularity=8
 DynamicChannelsSupported=0
 CompactPDO=0
 GroupMessaging=0
-NrOfRXPDO=18
+NrOfRXPDO=19
 NrOfTXPDO=1
 LSS_Supported=0
 
@@ -115,7 +115,7 @@ DefaultValue=0
 PDOMapping=0
 
 [OptionalObjects]
-SupportedObjects=42
+SupportedObjects=44
 1=0x1005
 2=0x1006
 3=0x1016
@@ -138,26 +138,28 @@ SupportedObjects=42
 20=0x140F
 21=0x1410
 22=0x1411
-23=0x1600
-24=0x1601
-25=0x1602
-26=0x1603
-27=0x1604
-28=0x1605
-29=0x1606
-30=0x1607
-31=0x1608
-32=0x1609
-33=0x160A
-34=0x160B
-35=0x160C
-36=0x160D
-37=0x160E
-38=0x160F
-39=0x1610
-40=0x1611
-41=0x1800
-42=0x1A00
+23=0x1412
+24=0x1600
+25=0x1601
+26=0x1602
+27=0x1603
+28=0x1604
+29=0x1605
+30=0x1606
+31=0x1607
+32=0x1608
+33=0x1609
+34=0x160A
+35=0x160B
+36=0x160C
+37=0x160D
+38=0x160E
+39=0x160F
+40=0x1610
+41=0x1611
+42=0x1612
+43=0x1800
+44=0x1A00
 
 [1005]
 ParameterName=SYNC COB ID
@@ -1179,6 +1181,59 @@ AccessType=rw
 DefaultValue=0
 PDOMapping=0
 
+[1412]
+ParameterName=Receive PDO 19 Parameter
+ObjectType=0x9
+SubNumber=6
+
+[1412sub0]
+ParameterName=Highest SubIndex Supported
+ObjectType=0x7
+DataType=0x0005
+AccessType=ro
+DefaultValue=6
+PDOMapping=0
+
+[1412sub1]
+ParameterName=COB ID used by PDO
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=404
+PDOMapping=0
+
+[1412sub2]
+ParameterName=Transmission Type
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1412sub3]
+ParameterName=Inhibit Time
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1412sub5]
+ParameterName=Event Timer
+ObjectType=0x7
+DataType=0x0006
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
+[1412sub6]
+ParameterName=SYNC start value
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=0
+
 [1600]
 ParameterName=Receive PDO 1 Mapping
 ObjectType=0x8
@@ -2037,6 +2092,27 @@ AccessType=rw
 DefaultValue=545193992
 PDOMapping=0
 
+[1612]
+ParameterName=Receive PDO 19 Mapping
+ObjectType=0x8
+SubNumber=2
+
+[1612sub0]
+ParameterName=Number of Entries
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=1
+PDOMapping=0
+
+[1612sub1]
+ParameterName=PDO 19 Mapping for an application object 1
+ObjectType=0x7
+DataType=0x0007
+AccessType=rw
+DefaultValue=545718280
+PDOMapping=0
+
 [1800]
 ParameterName=Transmit PDO 1 Parameter
 ObjectType=0x9
@@ -2055,7 +2131,7 @@ ParameterName=COB ID used by PDO
 ObjectType=0x7
 DataType=0x0007
 AccessType=rw
-DefaultValue=576
+DefaultValue=160
 PDOMapping=0
 
 [1800sub2]
@@ -2104,7 +2180,7 @@ DefaultValue=536870920
 PDOMapping=0
 
 [ManufacturerObjects]
-SupportedObjects=80
+SupportedObjects=81
 1=0x2000
 2=0x2001
 3=0x200F
@@ -2185,6 +2261,7 @@ SupportedObjects=80
 78=0x206F
 79=0x2077
 80=0x207F
+81=0x2087
 
 [2000]
 ParameterName=DO1
@@ -2820,6 +2897,14 @@ PDOMapping=1
 
 [207F]
 ParameterName=Go_Button
+ObjectType=0x7
+DataType=0x0005
+AccessType=rw
+DefaultValue=0
+PDOMapping=1
+
+[2087]
+ParameterName=Manual_Selection
 ObjectType=0x7
 DataType=0x0005
 AccessType=rw
