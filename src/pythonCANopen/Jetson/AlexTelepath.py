@@ -31,8 +31,7 @@ class AlexTelepath(object):
         self.Jetson.Setup()
         self.thread = RepeatTimerThread(0.01, self.Jetson.Update)
         self.MLModel = MLAlex()
-        self.lastState = 0
-        self.PredictionMade = False
+        self.lastPrediction = -1
     def start(self):
         print("Starting AlexTelepath prediction...")
         self.thread.start()
@@ -48,12 +47,12 @@ class AlexTelepath(object):
                 
                 print('The Prediction is:', my_prediction)
                 # need to create a mapping
-                self.Jetson.transmit_prediction(my_prediction)
+                if self.lastPrediction != my_prediction:
+                    self.Jetson.transmit_prediction(my_prediction)
+                    self.lastPrediction = my_prediction
             else: 
-                print("did not make a prediction")
+                print("Did not make prediction")
             
-            if self.Jetson.current_state != self.lastState:
-                self.PredictionMade = False
             
             self.lastState = self.Jetson.current_state
             # time.sleep(0.1)
