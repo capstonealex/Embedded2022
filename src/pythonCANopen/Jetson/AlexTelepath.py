@@ -11,7 +11,7 @@ import time
 from CANNetwork import CANNetwork
 
 #constants 
-num_rpdo = 18
+num_rpdo = 20
 node_id = 66
 
 class RepeatTimerThread(Timer):
@@ -27,7 +27,7 @@ class AlexTelepath(object):
 #variables
     def __init__(self, node_id):
         self.model_input_circular  = CircularBuffer.circularlist(2400)
-        self.Jetson = CANNetwork(node_id, num_rpdo, 'Jetson_66_v2.eds', self.model_input_circular)
+        self.Jetson = CANNetwork(node_id, num_rpdo, 'Jetson_66_v21.eds', self.model_input_circular)
         self.Jetson.Setup()
         self.thread = RepeatTimerThread(0.01, self.Jetson.Update)
         self.MLModel = MLAlex()
@@ -36,13 +36,14 @@ class AlexTelepath(object):
     def start(self):
         print("Starting AlexTelepath prediction...")
         self.thread.start()
-        #count = 0
+        count = 0
         while(True):
-            #count += 1
+            count += 1
             if self.Jetson.acceptPrediction and \
                  AlexState.isStationaryState(self.Jetson.current_state): #Can make a prediction
                 #make a prediction with data 
                 my_prediction = self.MLModel.predict_state(self.Jetson.current_state, [self.model_input_circular.Data])
+                #my_prediction = 1
                 
                 
                 print('The Prediction is:', my_prediction)
@@ -51,11 +52,14 @@ class AlexTelepath(object):
             else: 
                 print("did not make a prediction")
             
+            if self.Jetson.current_state != self.lastState:
+                self.PredictionMade = False
+            
             self.lastState = self.Jetson.current_state
             # time.sleep(0.1)
             # if count > 1000000:
             #     break
-        self.Jetson.SetupHardware()
+        # self.Jetson.SetupHardware()
     def stop(self):
         if self.thread is not None:
             self.thread.cancel()

@@ -44,7 +44,7 @@ class CANNetwork(Network):
         self.startTime = 0
         self.rpdo_converter = Converter()
         self.current_state = 0
-        self.acceptPrediction = True
+        self.acceptPrediction = False
         
     
     def Setup(self):
@@ -53,8 +53,8 @@ class CANNetwork(Network):
         self.network = canopen.Network()
 
         # connect to the CAN network
-        self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-        #self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+        #self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+        self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
         # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
         self.node = self.network.create_node(self.nodeid , self.edsfileName )
@@ -156,7 +156,7 @@ class CANNetwork(Network):
             #print(self.current_state)
         elif cob_id[2:5] == "194": #this sets if prediction is enabled
             self.acceptPrediction = bool(splited_hex[0])
-            #print(self.acceptPrediction)
+            print(self.acceptPrediction)
         else: 
             print("Invalid COB-ID") 
             
