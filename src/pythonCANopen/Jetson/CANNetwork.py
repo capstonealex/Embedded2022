@@ -43,7 +43,8 @@ class CANNetwork(Network):
         self.tempbuffer = [0] * 24
         self.startTime = 0
         self.rpdo_converter = Converter()
-        self.current_state = 2
+        self.current_state = 0
+        self.acceptPrediction = True
         
     
     def Setup(self):
@@ -52,8 +53,8 @@ class CANNetwork(Network):
         self.network = canopen.Network()
 
         # connect to the CAN network
-        # self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
-        self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
+        self.network.connect(bustype='socketcan', channel='vcan0', bitrate=1000000)
+        #self.network.connect(bustype='socketcan', channel='can0', bitrate=1000000)
 
         # create a slaver node with id 2(need to match with master.py) and Object Dictionary "Slaver.eds"
         self.node = self.network.create_node(self.nodeid , self.edsfileName )
@@ -69,86 +70,21 @@ class CANNetwork(Network):
         self.node.tpdo.read()
         #add callbacks
         for i in range(1, self.num_rpdo):
-            self.node.rpdo[i].add_callback(self.process_rpdo) 
-        # self.node.rpdo[1].add_callback(self.process_281)
-        # self.node.rpdo[2].add_callback(self.process_381)
-        # self.node.rpdo[3].add_callback(self.process_282)
-        # self.node.rpdo[4].add_callback(self.process_382)
-        # self.node.rpdo[5].add_callback(self.process_283)
-        # self.node.rpdo[6].add_callback(self.process_383)
-        # self.node.rpdo[7].add_callback(self.process_284)
-        # self.node.rpdo[8].add_callback(self.process_384)
-        self.pdoCount = 0
-        self.startTime = time.perf_counter()
-
-    def process_281(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.LH_position] = self.rpdo_converter.position(splited_hex)
-        self.tempbuffer[DataOrder.LH_velocity] = self.rpdo_converter.velocity(splited_hex)
-        self.isPDOreceived[0] = 1
-        self.num_pdo_received[0] += 1
-
-    def process_282(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.LK_position] = self.rpdo_converter.position(splited_hex)
-        self.tempbuffer[DataOrder.LK_velocity] = self.rpdo_converter.velocity(splited_hex)
-        self.isPDOreceived[2] = 1
-        self.num_pdo_received[2] += 1
-
-    def process_283(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.RH_position] = self.rpdo_converter.position(splited_hex)
-        self.tempbuffer[DataOrder.RH_velocity] = self.rpdo_converter.velocity(splited_hex)
-        self.isPDOreceived[4] = 1
-        self.num_pdo_received[4] += 1
-
-    def process_284(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.RK_position] = self.rpdo_converter.position(splited_hex)
-        self.tempbuffer[DataOrder.RK_velocity] = self.rpdo_converter.velocity(splited_hex)
-        self.isPDOreceived[6] = 1
-        self.num_pdo_received[6] += 1
-    def process_381(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.LH_torque] = self.rpdo_converter.torque(splited_hex)
-        self.isPDOreceived[1] = 1
-        self.num_pdo_received[1] += 1
-    def process_382(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.LK_torque] = self.rpdo_converter.torque(splited_hex)
-        self.isPDOreceived[3] = 1
-        self.num_pdo_received[3] += 1
-
-    def process_383(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.RH_torque] = self.rpdo_converter.torque(splited_hex)
-        self.isPDOreceived[5] = 1
-        self.num_pdo_received[5] += 1
-        
-    def process_384(self, message):
-        splited_hex = [var.raw for var in message]
-        self.tempbuffer[DataOrder.RK_torque] = self.rpdo_converter.torque(splited_hex)
-        self.isPDOreceived[7] = 1
-        self.num_pdo_received[7] += 1
-
-    
+            self.node.rpdo[i].add_callback(self.process_rpdo)     
     
     def Update(self): 
     ## Any polling goes here 
-        #print(self.tempbuffer)
         for i in range(24):
             self.model_input_circular.append(self.tempbuffer[i]) 
         #print(self.tempbuffer)
 
     def SetupHardware(self):
         print(self.num_pdo_received)
-        print(self.pdoCount)
     ## For setting up hardware (might not be in use
 
     
     def process_rpdo(self,message): # "message" type: 'canopen.pdo.base.Map'; var type: 'canopen.pdo.base.Variable'  
         # print('%s received' % message.name)
-        self.pdoCount += 1
         cob_id = str(hex(message.cob_id))
         # Add crutch sensor pdo criteria by message.cob_id
         splited_hex = [var.raw for var in message]
@@ -158,53 +94,72 @@ class CANNetwork(Network):
             self.tempbuffer[DataOrder.LH_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.LH_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[0] = 1
+            self.num_pdo_received[0] += 1
         elif cob_id[2:5] == '381': # if rpdo is 0x3--, set denominator to 1 to extract all msg as torque
             self.tempbuffer[DataOrder.LH_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[1] = 1
+            self.num_pdo_received[1] += 1
         # Left Knee Motor
         elif cob_id[2:5] == '282':
             self.tempbuffer[DataOrder.LK_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.LK_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[2] = 1
+            self.num_pdo_received[2] += 1
         elif cob_id[2:5] == '382':
             self.tempbuffer[DataOrder.LK_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[3] = 1
+            self.num_pdo_received[3] += 1
         # Right Hip Motor
         elif cob_id[2:5] == '283':
             self.tempbuffer[DataOrder.RH_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.RH_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[4] = 1
+            self.num_pdo_received[4] += 1
         elif cob_id[2:5] == '383':
             self.tempbuffer[DataOrder.RH_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[5] = 1
+            self.num_pdo_received[5] += 1
         # Right Knee Motor
         elif cob_id[2:5] == '284':
             self.tempbuffer[DataOrder.RK_position] = self.rpdo_converter.position(splited_hex)
             self.tempbuffer[DataOrder.RK_velocity] = self.rpdo_converter.velocity(splited_hex)
             self.isPDOreceived[6] = 1
+            self.num_pdo_received[6] += 1
         elif cob_id[2:5] == '384':
             self.tempbuffer[DataOrder.RK_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[7] = 1
+            self.num_pdo_received[7] += 1
         # Config crutch sensor data convertion
         elif cob_id[2:4] == 'f1':
             self.Left_unsigned16bit_raw = self.rpdo_converter.Left_crutch_data_1(splited_hex)
             self.isPDOreceived[8] = 1
+            self.num_pdo_received[8] += 1
         elif cob_id[2:4] == 'f9':
             self.Right_unsigned16bit_raw = self.rpdo_converter.Right_crutch_data_1(splited_hex)
             self.isPDOreceived[9] = 1
+            self.num_pdo_received[9] += 1
         elif cob_id[2:4] == 'f2':
+            self.num_pdo_received[10] += 1
             if self.isPDOreceived[8] == 1:
                 self.tempbuffer[DataOrder.L_CRUTCH: DataOrder.L_CRUTCH+6] = \
                      self.rpdo_converter.Left_crutch_data_2(self.Left_unsigned16bit_raw, splited_hex)
                 self.isPDOreceived[10] = 1
             # print("Left_crutch_data",Left_crutch_data)
         elif cob_id[2:4] == 'fa':
+            self.num_pdo_received[11] += 1
             if self.isPDOreceived[9] == 1:
                 self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
                     self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
                 self.isPDOreceived[11] = 1
         elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
             self.current_state = splited_hex[0]
+            #print(self.current_state)
+        elif cob_id[2:5] == "194": #this sets if prediction is enabled
+            self.acceptPrediction = bool(splited_hex[0])
+            #print(self.acceptPrediction)
+        else: 
+            print("Invalid COB-ID") 
+            
 
     def transmit_prediction(self, prediction):
         # print('prediction: ', prediction)

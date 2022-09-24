@@ -20,7 +20,7 @@ class CANSimulator:
                 canComponent = line.split()
                 canCommand = "cansend {0} {1}#{2}".format(bus, canComponent[1],''.join(canComponent[3:]))
                 os.system(canCommand)
-                #time.sleep(0.002) # this delay has to be above 0.002s 
+                time.sleep(0.1) # this delay has to be above 0.002s 
 
 
 if __name__ == "__main__": 
