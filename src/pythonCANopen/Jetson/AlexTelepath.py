@@ -34,25 +34,31 @@ class AlexTelepath(object):
         self.lastPrediction = -1
     def start(self):
         print("Starting AlexTelepath prediction...")
-        self.thread.start()
-        count = 0
-        while(True):
-            count += 1
-            if self.Jetson.acceptPrediction and \
-                 AlexState.isStationaryState(self.Jetson.current_state): #Can make a prediction
-                #make a prediction with data 
-                my_prediction = self.MLModel.predict_state(self.Jetson.current_state, [self.model_input_circular.Data])
-                #my_prediction = 1
+
+        try:
+            self.thread.start()
+            while(True):
+                #self.Jetson.SetupHardware()
+                time.sleep(.5)
+                #print(self.Jetson.current_state)
+                if self.Jetson.acceptPrediction and \
+                         AlexState.isStationaryState(self.Jetson.current_state): #Can make a prediction
+                #     #make a prediction with data 
+                    my_prediction = self.MLModel.predict_state(self.Jetson.current_state, [self.model_input_circular.Data])
+                #     #my_prediction = 1
+                #     #print('The Prediction is:', my_prediction)
+                #     # need to create a mapping
+                    if self.lastPrediction != my_prediction:
+                        print("Transmit prediction", my_prediction)
+                        self.Jetson.transmit_prediction(my_prediction)
+                        self.lastPrediction = my_prediction
+                # else: 
+                #     pass
+                #     # print("Did not make prediction")
+        except Exception as e:
+            print("Buffer size is:", len(self.model_input_circular.Data))
+            print(e) 
                 
-                
-                print('The Prediction is:', my_prediction)
-                # need to create a mapping
-                if self.lastPrediction != my_prediction:
-                    self.Jetson.transmit_prediction(my_prediction)
-                    self.lastPrediction = my_prediction
-            else: 
-                print("Did not make prediction")
-            
             
             self.lastState = self.Jetson.current_state
             # time.sleep(0.1)
@@ -78,8 +84,7 @@ if __name__ == "__main__":
     alexTelepath = AlexTelepath(node_id)
     alexTelepath.start()
 
-
-
+    
 #This intent prediction dictionary 
 #maps the Machine Learning 'intent' string representations to the RobotMode representations of next state.
 # intents = {
@@ -107,4 +112,22 @@ if __name__ == "__main__":
 #     FTTG,       /**< 10 */
 #     UNEVEN,     /**< 11 */
 #     INITIAL     /**< 12 */
+
+    # Init = 0       
+    # InitSitting   = 1 
+    # LeftForward   = 2
+    # RightForward  = 3 
+    # Standing      = 4
+    # Sitting       = 5  
+    # SittingDown   = 6  
+    # StandingUp    = 7
+    # StepFirstL    = 8
+    # StepFirstR    = 9   
+    # StepLastL     = 10
+    # StepLastR     = 11
+    # StepL         = 12        
+    # StepR         = 13
+    # BackStepR     = 14
+    # BackStepL     = 15
+    # Error         = 16
 # }

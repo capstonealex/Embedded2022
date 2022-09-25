@@ -22,7 +22,7 @@ class MLAlex(object):
             prediction = self.state_dictionary[currentState].make_prediction(data)
             pdo_prediction = self.crutch_intent.get(prediction).value # why not just self.crutch_intent[prediction] 
         else:
-            print("Not a valid prediction state.")
+            #print("Not a valid prediction state.")
             return "invalid"
         return pdo_prediction
     

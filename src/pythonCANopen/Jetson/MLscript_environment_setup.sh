@@ -6,5 +6,5 @@ conda init bash
 # Activate the anaconda environment
 conda activate embed1
 # Run the python code
-python3 Jetson_rpdo.py
+python3 AlexTelepath.py
 

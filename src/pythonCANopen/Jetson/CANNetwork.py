@@ -36,7 +36,7 @@ class CANNetwork(Network):
         self.num_rpdo = num_rpdo
         self.edsfileName = edsfileName
         self.isPDOreceived = [0]*12
-        self.num_pdo_received = [0]*12
+        self.num_pdo_received = [0]*13
         self.model_input_circular  = circularBuffer
         self.Left_unsigned16bit_raw = [0]*12
         self.Right_unsigned16bit_raw = [0]*12
@@ -44,7 +44,7 @@ class CANNetwork(Network):
         self.startTime = 0
         self.rpdo_converter = Converter()
         self.current_state = 0
-        self.acceptPrediction = False
+        self.acceptPrediction = True
         
     
     def Setup(self):
@@ -140,25 +140,26 @@ class CANNetwork(Network):
             self.num_pdo_received[9] += 1
         elif cob_id[2:4] == 'f2':
             self.num_pdo_received[10] += 1
-            if self.isPDOreceived[8] == 1:
-                self.tempbuffer[DataOrder.L_CRUTCH: DataOrder.L_CRUTCH+6] = \
-                     self.rpdo_converter.Left_crutch_data_2(self.Left_unsigned16bit_raw, splited_hex)
-                self.isPDOreceived[10] = 1
+            # if self.isPDOreceived[8] == 1:
+            #     self.tempbuffer[DataOrder.L_CRUTCH: DataOrder.L_CRUTCH+6] = \
+            #          self.rpdo_converter.Left_crutch_data_2(self.Left_unsigned16bit_raw, splited_hex)
+            #     self.isPDOreceived[10] = 1
             # print("Left_crutch_data",Left_crutch_data)
         elif cob_id[2:4] == 'fa':
             self.num_pdo_received[11] += 1
-            if self.isPDOreceived[9] == 1:
-                self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
-                    self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
-                self.isPDOreceived[11] = 1
+            # if self.isPDOreceived[9] == 1:
+            #     self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
+            #         self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
+            #     self.isPDOreceived[11] = 1
         elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
+            self.num_pdo_received[12] += 1
             self.current_state = splited_hex[0]
-            #print(self.current_state)
+            print("Current state:",self.current_state)
         elif cob_id[2:5] == "194": #this sets if prediction is enabled
             self.acceptPrediction = bool(splited_hex[0])
-            print(self.acceptPrediction)
-        else: 
-            print("Invalid COB-ID") 
+            print("Accept prediction:",self.acceptPrediction)
+        #else: 
+            #print("Invalid COB-ID", cob_id) 
             
 
     def transmit_prediction(self, prediction):
