@@ -7,7 +7,7 @@ class MLAlex(object):
         # """Initialization (loading) of the ML models for each state"""
         self.intents_walkL = { 0: "walkFL~fwd", 1: "walkFL~stand"}
         self.intents_walkR = { 0: "walkFR~back", 1: "walkFR~fwd", 2: "walkFR~stand"}
-        self.intents_stand = { 0: "stand~back", 1: "stand~fwd", 2: "stand~sit" }
+        self.intents_stand = { 0: "stand~back", 1: "stand~fwd"}
         self.crutch_intent = {"walkFR~fwd" : Intent.BKSTEP, "walkFR~stand": Intent.FTTG, "walkFL~fwd":Intent.NORMALWALK, \
             "walkFL~stand": Intent.FTTG, "stand~back": Intent.BKSTEP, "stand~fwd": Intent.NORMALWALK, "stand~sit": Intent.SITDOWN }
         self.walkLModel = MLModel('walk_L_ML_model.joblib','walk_L_PCA.joblib',self.intents_walkL)
@@ -20,9 +20,9 @@ class MLAlex(object):
         """Perform Prediction using the correct ML model and Exo data"""
         if currentState in self.state_dictionary.keys():
             prediction = self.state_dictionary[currentState].make_prediction(data)
-            pdo_prediction = self.crutch_intent.get(prediction).value # why not just self.crutch_intent[prediction] 
+            pdo_prediction = int(self.crutch_intent[prediction])
         else:
             #print("Not a valid prediction state.")
-            return "invalid"
+            return -1
         return pdo_prediction
     

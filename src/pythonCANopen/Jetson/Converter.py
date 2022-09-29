@@ -45,7 +45,7 @@ class Converter():
             data_1[i+7] = rawmsg[i]
         for i in range(0,6):
             self.Left_crutch_data[i] = int.from_bytes(bytes(data_1[0+2*i:2+2*i]), byteorder='big', signed=True)
-            self.Left_crutch_data[i] = self.Left_crutch_data[i] - 2^16
+            #self.Left_crutch_data[i] = self.Left_crutch_data[i] - 2^16
             if(i<3):
                 self.Left_crutch_data[i] = self.Left_crutch_data[i]/50
             elif(i>=3):
@@ -58,7 +58,7 @@ class Converter():
             data_1[i+7] = rawmsg[i]
         for i in range(0,6):
             self.Right_crutch_data[i] = int.from_bytes(bytes(data_1[0+2*i:2+2*i]), byteorder='big', signed=True)
-            self.Right_crutch_data[i] = self.Right_crutch_data[i] - 2^16
+            #self.Right_crutch_data[i] = self.Right_crutch_data[i] - 2^16
             if(i<3):
                 self.Right_crutch_data[i] = self.Right_crutch_data[i]/50
             elif(i>=3):

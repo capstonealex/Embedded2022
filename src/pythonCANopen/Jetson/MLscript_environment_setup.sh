@@ -1,6 +1,6 @@
 
 #!/bin/bash
-
+                       
 # Initialize conda for shell interaction.
 conda init bash
 # Activate the anaconda environment

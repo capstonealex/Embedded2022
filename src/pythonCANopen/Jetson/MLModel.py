@@ -19,14 +19,15 @@ class MLModel(object):
        
 
             intent_predict_proba = self.mlModel.predict_proba(data_PCA) 
-
+            #print(intent_predict_proba)
+            print(self.mlModel.classes_)
             # Order priority list from exoskeleton data to get intent for next movement
             # Create tuples of probability of class and class and add to a list
             prob_class_list = []
             for c in range(0,len(intent_predict_proba[0])):
                 prob_class = (intent_predict_proba[0][c], self.mlModel.classes_[c])
                 prob_class_list.append(prob_class)
-
+            #print(prob_class_list)
             # Sort the priority list in descending order
             prob_class_list.sort(reverse=True)
         
