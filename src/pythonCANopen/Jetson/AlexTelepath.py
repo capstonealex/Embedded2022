@@ -6,22 +6,14 @@ import CircularBuffer
 # from numpy import loadtxt
 from MLAlex import MLAlex
 from AlexStates import AlexState
-from threading import Timer
+from RepeatTimerThread import RepeatTimerThread
 import time
 from CANNetwork import CANNetwork
 
 #constants 
 num_rpdo = 20
-node_id = 66
+node_id = 6
 
-class RepeatTimerThread(Timer):
-    def run(self):
-        while not self.finished.wait(self.interval):
-            self.function(*self.args, **self.kwargs)
-    def pause(self):
-        self.cancel()
-    def restart(self):
-        self.run()
 
 class AlexTelepath(object):
 #variables
@@ -39,13 +31,15 @@ class AlexTelepath(object):
             self.thread.start()
             while(True):
                 #self.Jetson.SetupHardware()
-                time.sleep(1)
+                time.sleep(0.5)
                 #print(self.Jetson.current_state)
                 if self.Jetson.acceptPrediction and \
                          AlexState.isStationaryState(self.Jetson.current_state): #Can make a prediction
                 #     #make a prediction with data 
                     my_prediction = self.MLModel.predict_state(self.Jetson.current_state, [self.model_input_circular.Data])
-                    print(self.model_input_circular.Data[0:24])
+                    #print(self.model_input_circular.Data)
+                    
+                    # print(self.Jetson.tempbuffer)    
                 #     #my_prediction = 1
                 #     #print('The Prediction is:', my_prediction)
                 #     # need to create a mapping
@@ -59,9 +53,8 @@ class AlexTelepath(object):
         except Exception as e:
             print("Buffer size is:", len(self.model_input_circular.Data))
             print(e) 
+        return 
                 
-            
-            self.lastState = self.Jetson.current_state
             # time.sleep(0.1)
             # if count > 1000000:
             #     break
@@ -73,8 +66,6 @@ class AlexTelepath(object):
 
             
 
-
-time.sleep(1)
                 #print(self.Jets
 
     #Perform Prediction using ML model and Exo data

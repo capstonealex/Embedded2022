@@ -28,7 +28,9 @@ class DataOrder(IntEnum):
 
 class CANNetwork(Network):
 	## CAN network implementation 
-	# 
+	# Processes PDO and puts relevant data into circularBuffer for the ML model to use
+    # CircularBuffer is updated when the update function is called. 
+    # The calling of the update function should occur outside of the class using RepeatTimerThread
     def __init__(self, nodeid, num_rpdo, edsfileName, circularBuffer):
         self.network = None
         self.node = None
@@ -63,7 +65,7 @@ class CANNetwork(Network):
         self.node.nmt.send_command(0)
 
         # With the heartbeat configuration in object Dictionary, use the function by following command every 1s(1000ms)
-        #self.node.nmt.start_heartbeat(1000)  
+        self.node.nmt.start_heartbeat(1000)  
 
         # send pdo message
         self.node.rpdo.read()
@@ -88,7 +90,7 @@ class CANNetwork(Network):
         cob_id = str(hex(message.cob_id))
         # Add crutch sensor pdo criteria by message.cob_id
         splited_hex = [var.raw for var in message]
-       
+        #print(cob_id[2:5], len(self.tempbuffer))
         if cob_id[2:5] == '281': # if rpdo is 0x2-- , split msg into position and velocity
             # split list > create bytes class > convert bytes to int in little-endian
             self.tempbuffer[DataOrder.LH_position] = self.rpdo_converter.position(splited_hex)
@@ -97,6 +99,7 @@ class CANNetwork(Network):
             self.num_pdo_received[0] += 1
         elif cob_id[2:5] == '381': # if rpdo is 0x3--, set denominator to 1 to extract all msg as torque
             self.tempbuffer[DataOrder.LH_torque] = self.rpdo_converter.torque(splited_hex)
+            #print(splited_hex)
             self.isPDOreceived[1] = 1
             self.num_pdo_received[1] += 1
         # Left Knee Motor
@@ -106,6 +109,7 @@ class CANNetwork(Network):
             self.isPDOreceived[2] = 1
             self.num_pdo_received[2] += 1
         elif cob_id[2:5] == '382':
+            #print(splited_hex)
             self.tempbuffer[DataOrder.LK_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[3] = 1
             self.num_pdo_received[3] += 1
@@ -116,7 +120,9 @@ class CANNetwork(Network):
             self.isPDOreceived[4] = 1
             self.num_pdo_received[4] += 1
         elif cob_id[2:5] == '383':
+            #print(splited_hex)
             self.tempbuffer[DataOrder.RH_torque] = self.rpdo_converter.torque(splited_hex)
+            
             self.isPDOreceived[5] = 1
             self.num_pdo_received[5] += 1
         # Right Knee Motor
@@ -126,6 +132,7 @@ class CANNetwork(Network):
             self.isPDOreceived[6] = 1
             self.num_pdo_received[6] += 1
         elif cob_id[2:5] == '384':
+            #print(splited_hex)
             self.tempbuffer[DataOrder.RK_torque] = self.rpdo_converter.torque(splited_hex)
             self.isPDOreceived[7] = 1
             self.num_pdo_received[7] += 1
@@ -136,6 +143,7 @@ class CANNetwork(Network):
             self.num_pdo_received[8] += 1
         elif cob_id[2:4] == 'f9':
             self.Right_unsigned16bit_raw = self.rpdo_converter.Right_crutch_data_1(splited_hex)
+            #print(self.Right_unsigned16bit_raw)
             self.isPDOreceived[9] = 1
             self.num_pdo_received[9] += 1
         elif cob_id[2:4] == 'f2':
@@ -147,17 +155,21 @@ class CANNetwork(Network):
            # print("Left_crutch_data",Left_crutch_data)
         elif cob_id[2:4] == 'fa':
             self.num_pdo_received[11] += 1
+            #print(len(self.tempbuffer))
             if self.isPDOreceived[9] == 1:
                 self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6] = \
                     self.rpdo_converter.Right_crutch_data_2(self.Right_unsigned16bit_raw, splited_hex)
                 self.isPDOreceived[11] = 1
+            #print(self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6])
+
+            #print(self.tempbuffer[DataOrder.R_CRUTCH: DataOrder.R_CRUTCH+6])
         elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
             self.num_pdo_received[12] += 1
             self.current_state = splited_hex[0]
-            print("Current state:",self.current_state)
+            #print("Current state:",self.current_state)
         elif cob_id[2:5] == "194": #this sets if prediction is enabled
             self.acceptPrediction = bool(splited_hex[0])
-            print("Accept prediction:",self.acceptPrediction)
+            #print("Accept prediction:",self.acceptPrediction)
         #else: 
             #print("Invalid COB-ID", cob_id) 
             

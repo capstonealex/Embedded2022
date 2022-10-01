@@ -3,31 +3,36 @@
 # The make_prediction method predicts the next exo state based one full test data set 
 
 from joblib import load
+import warnings 
+warnings.filterwarnings("ignore", category=UserWarning)
 
 class MLModel(object):
-    def __init__(self, mlFileName, pcaFileName, intentsDic):
+    def __init__(self, mlFileName, pcaFileName,scalerFileName,intentsDic):
         """Initialization (loading) of the models"""
         self.mlModel = load(mlFileName)
         self.pcaModel = load(pcaFileName)
+        self.standardScaler = load(scalerFileName)
         self.intentsDictionary = intentsDic
 
 
     def make_prediction(self, data):
         """Perform Prediction using ML model and Exo data"""
         try:
-            data_PCA = self.pcaModel.transform(data)
+            dataScaled = self.standardScaler.transform(data)
+
+            data_PCA = self.pcaModel.transform(dataScaled)
        
 
             intent_predict_proba = self.mlModel.predict_proba(data_PCA) 
             #print(intent_predict_proba)
-            print(self.mlModel.classes_)
+            #print(self.mlModel.classes_)
             # Order priority list from exoskeleton data to get intent for next movement
             # Create tuples of probability of class and class and add to a list
             prob_class_list = []
             for c in range(0,len(intent_predict_proba[0])):
                 prob_class = (intent_predict_proba[0][c], self.mlModel.classes_[c])
                 prob_class_list.append(prob_class)
-            #print(prob_class_list)
+            print(prob_class_list)
             # Sort the priority list in descending order
             prob_class_list.sort(reverse=True)
         
