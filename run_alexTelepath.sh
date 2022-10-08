@@ -6,5 +6,5 @@ conda init bash
 # Activate the anaconda environment
 conda activate embed1
 # Run the python code
-python3 -m alextelepath.AlexTelepath.py
+python3 -m alextelepath
 

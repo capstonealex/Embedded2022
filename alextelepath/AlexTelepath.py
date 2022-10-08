@@ -22,7 +22,7 @@ class AlexTelepath(object):
     def __init__(self):
         """! Initializes AlexTelepath class."""
         self.model_input_circular  = CircularBuffer(2400)
-        self._jetson = CANNetwork(node_id, num_rpdo, 'Jetson_66_v21.eds', self.model_input_circular, True)
+        self._jetson = CANNetwork(node_id, num_rpdo, 'Jetson_66_v21.eds', self.model_input_circular)
         self._jetson.Setup()
         self._update_thread = RepeatTimerThread(0.01, self._jetson.Update)
         self._ml_model = MLAlex()
