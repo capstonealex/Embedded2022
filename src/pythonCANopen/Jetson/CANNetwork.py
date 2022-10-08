@@ -6,6 +6,7 @@ from abc import abstractmethod
 from interface.Network import Network
 from Converter import Converter
 import CircularBuffer
+from AlexStates import AlexState
 from enum import IntEnum
 
 class DataOrder(IntEnum):
@@ -166,7 +167,7 @@ class CANNetwork(Network):
         elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
             self.num_pdo_received[12] += 1
             self.current_state = splited_hex[0]
-            #print("Current state:",self.current_state)
+            print("Current state:",AlexState(self.current_state))
         elif cob_id[2:5] == "194": #this sets if prediction is enabled
             self.acceptPrediction = bool(splited_hex[0])
             #print("Accept prediction:",self.acceptPrediction)

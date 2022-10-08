@@ -44,7 +44,7 @@ class AlexTelepath(object):
                 #     #print('The Prediction is:', my_prediction)
                 #     # need to create a mapping
                     if self.lastPrediction != my_prediction and my_prediction != -1:
-                        print("Transmit prediction", my_prediction)
+                        print("Transmit prediction", AlexState(my_prediction))
                         self.Jetson.transmit_prediction(my_prediction)
                         self.lastPrediction = my_prediction
                 # else: 
