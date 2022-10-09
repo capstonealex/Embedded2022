@@ -8,6 +8,7 @@ from Converter import Converter
 import CircularBuffer
 from AlexStates import AlexState
 from enum import IntEnum
+from os import path
 
 class DataOrder(IntEnum):
     L_CRUTCH = 0 #crutch has 6 data each
@@ -37,7 +38,7 @@ class CANNetwork(Network):
         self.node = None
         self.nodeid = int(nodeid)
         self.num_rpdo = num_rpdo
-        self.edsfileName = edsfileName
+        self.edsfileName = path.join(path.dirname(path.realpath(__file__)), edsfileName)
         self.isPDOreceived = [0]*12
         self.num_pdo_received = [0]*13
         self.model_input_circular  = circularBuffer

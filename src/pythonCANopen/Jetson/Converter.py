@@ -14,8 +14,10 @@ class Converter():
         self.rawmsg = None
         self.Left_crutch_data = [0]*12
         self.Right_crutch_data = [0]*12
-        self.Left_crutch_offset = [25.1,7.2,22.2,0,0,0]
-        self.Right_crutch_offset = [-33,32,-11.34,0.074,0.19,3.44]
+        self.Left_crutch_offset = [5, 31, 1, 99, 3, 200, 254, 0, 0, 0, 0, 0]
+        #self.Right_crutch_offset = [-33,32,-11.34,0.074,0.19,3.44]
+        self.Right_crutch_offset = [249, 78, 6, 124, 251, 202, 0, 0, 0, 0, 0, 0]
+
     
     
     def position(self, rawmsg):
@@ -73,6 +75,7 @@ class Converter():
                 crutchOut[i] = crutchOut[i]/50
             elif(i>=3):
                 crutchOut[i] = crutchOut[i]/2000
+            crutchOut[i] -= self.Left_crutch_offset[i]
         # print("left")
         # print(crutchOut)
         return crutchOut
@@ -90,6 +93,7 @@ class Converter():
                 crutchOut[i] = crutchOut[i]/50
             elif(i>=3):
                 crutchOut[i] = crutchOut[i]/2000
+            crutchOut[i] -= self.Right_crutch_offset[i]
         #print("Right")
         return crutchOut
 

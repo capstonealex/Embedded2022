@@ -5,7 +5,7 @@ import canopen
 import CircularBuffer
 # from numpy import loadtxt
 from MLAlex import MLAlex
-from AlexStates import AlexState
+from AlexStates import AlexState, Intent
 from RepeatTimerThread import RepeatTimerThread
 import time
 from CANNetwork import CANNetwork
@@ -37,14 +37,14 @@ class AlexTelepath(object):
                          AlexState.isStationaryState(self.Jetson.current_state): #Can make a prediction
                 #     #make a prediction with data 
                     my_prediction = self.MLModel.predict_state(self.Jetson.current_state, [self.model_input_circular.Data])
-                    #print(self.model_input_circular.Data)
+                    #print(self.model_input_circular.Data[0:24])
                     
                     # print(self.Jetson.tempbuffer)    
                 #     #my_prediction = 1
                 #     #print('The Prediction is:', my_prediction)
                 #     # need to create a mapping
                     if self.lastPrediction != my_prediction and my_prediction != -1:
-                        print("Transmit prediction", AlexState(my_prediction))
+                        print("Transmit prediction", Intent(my_prediction))
                         self.Jetson.transmit_prediction(my_prediction)
                         self.lastPrediction = my_prediction
                 # else: 

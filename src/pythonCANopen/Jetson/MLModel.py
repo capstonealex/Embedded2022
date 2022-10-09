@@ -19,10 +19,8 @@ class MLModel(object):
         """Perform Prediction using ML model and Exo data"""
         try:
             dataScaled = self.standardScaler.transform(data)
-
+            print(dataScaled[0:24])
             data_PCA = self.pcaModel.transform(dataScaled)
-       
-
             intent_predict_proba = self.mlModel.predict_proba(data_PCA) 
             #print(intent_predict_proba)
             #print(self.mlModel.classes_)
