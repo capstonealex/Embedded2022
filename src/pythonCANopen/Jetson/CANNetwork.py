@@ -181,8 +181,3 @@ class CANNetwork(Network):
         if prediction != 'invalid':
             self.node.tpdo[1][0x2000].raw = prediction
             self.node.tpdo[1].transmit()
-    
-    def Update(self): 
-        for i in range(24):
-            self.model_input_circular.append(self.tempbuffer[i]) 
-        
