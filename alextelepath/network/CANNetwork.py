@@ -6,7 +6,7 @@ from .Converter import Converter
 from .Network import Network
 from ..AlexStates import AlexState
 from enum import IntEnum
-import os
+from os import path
 
 class DataOrder(IntEnum):
     L_CRUTCH = 0 #crutch has 6 data each
@@ -44,12 +44,11 @@ class CANNetwork(Network):
             circular_buffer (CircularBuffer): Data structure to share data on
             virtual_can (bool) : Use virtual CAN bus if true, defaults to false
         """
-        print(os.path.abspath(__file__))
         self._network = None
         self._node = None
         self._nodeid = int(nodeid)
         self._num_rpdo = num_rpdo
-        self._edsfileName = eds_filename
+        self._edsfileName = path.join(path.dirname(path.realpath(__file__)), eds_filename)
         self._isPDOreceived = [0]*12
         self._num_pdo_received = [0]*13
         self._model_input_circular  = circular_buffer

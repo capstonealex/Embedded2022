@@ -33,7 +33,7 @@ class AlexTelepath(object):
         try:
             self._update_thread.start()
             while(True):
-                time.sleep(0.5)
+                time.sleep(1)
                 if self._jetson.accept_prediction and \
                          AlexState.isStationaryState(self._jetson.current_state): #Can make a prediction
                     my_prediction = self._ml_model.make_prediction(self._jetson.current_state, [self.model_input_circular.Data])

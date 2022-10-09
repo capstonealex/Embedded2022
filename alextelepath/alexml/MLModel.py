@@ -5,19 +5,17 @@
 from joblib import load
 import warnings 
 warnings.filterwarnings("ignore", category=UserWarning)
-import os.path
+from os import path
 class MLModel(object):
     def __init__(self, mlFileName, pcaFileName,scalerFileName,intentsDic):
         """Initialization (loading) of the models"""
-        pass
-        self.mlModel = load(mlFileName)
-        self.pcaModel = load(pcaFileName)
-        self.standardScaler = load(scalerFileName)
+        self.mlModel = load(path.join(path.dirname(path.realpath(__file__)), mlFileName))
+        self.pcaModel = load(path.join(path.dirname(path.realpath(__file__)),pcaFileName))
+        self.standardScaler = load(path.join(path.dirname(path.realpath(__file__)),scalerFileName))
         self.intentsDictionary = intentsDic
 
 
     def make_prediction(self, data):
-        return -1
         """Perform Prediction using ML model and Exo data"""
         try:
             dataScaled = self.standardScaler.transform(data)
