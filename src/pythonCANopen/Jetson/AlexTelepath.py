@@ -31,7 +31,7 @@ class AlexTelepath(object):
             self.thread.start()
             while(True):
                 #self.Jetson.SetupHardware()
-                time.sleep(0.5)
+                time.sleep(1)
                 #print(self.Jetson.current_state)
                 if self.Jetson.acceptPrediction and \
                          AlexState.isStationaryState(self.Jetson.current_state): #Can make a prediction

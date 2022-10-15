@@ -8,7 +8,7 @@ class MLAlex(object):
         self.intents_walkL = { 0: "walkFL~fwd", 1: "walkFL~stand"}
         self.intents_walkR = { 0: "walkFR~back", 1: "walkFR~fwd", 2: "walkFR~stand"}
         self.intents_stand = { 0: "stand~back", 1: "stand~fwd"}
-        self.crutch_intent = {"walkFR~fwd" : Intent.FTTG, "walkFR~stand": Intent.FTTG, "walkFL~fwd":Intent.NORMALWALK, \
+        self.crutch_intent = {"walkFR~fwd" : Intent.NORMALWALK, "walkFR~stand": Intent.FTTG, "walkFL~fwd":Intent.NORMALWALK, \
             "walkFL~stand": Intent.FTTG, "walkFR~back": Intent.BKSTEP, "stand~back": Intent.BKSTEP, "stand~fwd": Intent.NORMALWALK}
         self.walkLModel = MLModel('walk_L_ML_model_sklrn_1_0_2.joblib','walk_L_PCA_sklrn_1_0_2.joblib' , \
             'walk_L_SC.joblib',self.intents_walkL)
