@@ -1,5 +1,6 @@
 # from Jetson.CallbackTest.Jetson_rpdo import LH_torque, Left_crutch_data
 from ast import Global
+import profile
 import canopen
 import time
 from .Converter import Converter
@@ -7,6 +8,7 @@ from .Network import Network
 from ..AlexStates import AlexState
 from enum import IntEnum
 from os import path
+import time
 
 class DataOrder(IntEnum):
     L_CRUTCH = 0 #crutch has 6 data each
@@ -60,6 +62,7 @@ class CANNetwork(Network):
         self.current_state = 0
         self._virtual = virtual_can
         self.accept_prediction = True
+        self.lasttime = time.perf_counter()
         
     
     def Setup(self):
@@ -100,7 +103,7 @@ class CANNetwork(Network):
         print(self._num_pdo_received)
     ## For setting up hardware (might not be in use
 
-    
+    #@profile
     def process_rpdo(self,message): 
         """Callback function to process various rpdos 
 
@@ -116,13 +119,13 @@ class CANNetwork(Network):
             # split list > create bytes class > convert bytes to int in little-endian
             self._tempbuffer[DataOrder.LH_position] = self.rpdo_converter.position(splited_hex)
             self._tempbuffer[DataOrder.LH_velocity] = self.rpdo_converter.velocity(splited_hex)
-            self._isPDOreceived[0] = 1
-            self._num_pdo_received[0] += 1
+            # self._isPDOreceived[0] = 1
+            # self._num_pdo_received[0] += 1
         elif cob_id[2:5] == '381': # if rpdo is 0x3--, set denominator to 1 to extract all msg as torque
             self._tempbuffer[DataOrder.LH_torque] = self.rpdo_converter.torque(splited_hex)
             #print(splited_hex)
-            self._isPDOreceived[1] = 1
-            self._num_pdo_received[1] += 1
+            # self._isPDOreceived[1] = 1
+            # self._num_pdo_received[1] += 1
         # Left Knee Motor
         elif cob_id[2:5] == '282':
             self._tempbuffer[DataOrder.LK_position] = self.rpdo_converter.position(splited_hex)
@@ -152,9 +155,12 @@ class CANNetwork(Network):
             self._tempbuffer[DataOrder.RK_velocity] = self.rpdo_converter.velocity(splited_hex)
             self._isPDOreceived[6] = 1
             self._num_pdo_received[6] += 1
+            
         elif cob_id[2:5] == '384':
             #print(splited_hex)
             self._tempbuffer[DataOrder.RK_torque] = self.rpdo_converter.torque(splited_hex)
+            # print(time.perf_counter() - self.lasttime)
+            # self.lasttime = time.perf_counter()
             self._isPDOreceived[7] = 1
             self._num_pdo_received[7] += 1
         # Config crutch sensor data convertion
@@ -187,7 +193,8 @@ class CANNetwork(Network):
         elif cob_id[2:5] == '211': # if rpdo is 0x211, storage the current state
             self._num_pdo_received[12] += 1
             self.current_state = splited_hex[0]
-            print("The current state is:" ,AlexState(self.current_state))
+            #print("The current state is:" ,AlexState(self.current_state))
+            
             #print("Current state:",self.current_state)
         elif cob_id[2:5] == "194": #this sets if prediction is enabled
             self.accept_prediction = bool(splited_hex[0])
